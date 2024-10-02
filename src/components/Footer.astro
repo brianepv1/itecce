@@ -1,0 +1,113 @@
+---
+// src/components/Footer.astro
+import { pageLinks, companyLinks, contactInfo, address } from '../constants/footer';
+---
+
+<footer class="footer background-gradient">
+  <div class="container">
+    <div class="footer-row layer-a">
+      <div class="footer-column footer-info-column">
+        <div class="margin-bottom margin-16px">
+          <a href="/old-home" class="brand footer-brand w-inline-block">
+            <img src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f540_brand-logo.svg" loading="lazy" alt="Brand Logo" class="brand-logo-image">
+          </a>
+        </div>
+        <div class="margin-bottom margin-40px">
+          <p class="footer-info-text">Create and sell online courses, build vibrant communities, and monetize</p>
+        </div>
+        <div class="button-container footer-button">
+          <a href="https://webflow.com/templates/designers/flowfye" class="button-primary w-inline-block">
+            <div class="button-box-wrap">
+              <div class="button-box">
+                <div class="button-text">Buy Template</div>
+                <div class="button-text-absolute">Buy Template</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="footer-social-icons">
+          <a aria-label="facebook" href="http://facebook.com" class="footer-social-link w-inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 16.45 6.25 20.15 10.5 20.9L10.5501 20.8599C10.5331 20.8567 10.516 20.8533 10.499 20.8499V14.4999H8.24902V11.9999H10.499V9.99991C10.499 7.74991 11.949 6.49991 13.999 6.49991C14.649 6.49991 15.349 6.59991 15.999 6.69991V8.99991H14.849C13.749 8.99991 13.499 9.54991 13.499 10.2499V11.9999H15.899L15.499 14.4999H13.499V20.8499C13.4825 20.8532 13.466 20.8565 13.4495 20.8596L13.5 20.9C17.75 20.15 21 16.45 21 12C21 7.05 16.95 3 12 3C7.05 3 3 7.05 3 12Z" fill="currentColor"></path>
+            </svg>
+          </a>
+          <!-- Add other social icons here -->
+        </div>
+      </div>
+      <div class="footer-column footer-second-column-row">
+        <div class="footer-column">
+          <div class="margin-bottom margin-16px">
+            <h2 class="footer-link-column-title">Page</h2>
+          </div>
+          <div class="footer-link-wrapper">
+            {pageLinks.map(link => (
+              <a href={link.href} class="global-link-block w-inline-block">
+                <div class="button-box-wrap">
+                  <div class="button-box">
+                    <div class="button-text">{link.text}</div>
+                    <div class="button-text-absolute">{link.text}</div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="margin-bottom margin-16px">
+            <h2 class="footer-link-column-title">Company</h2>
+          </div>
+          <div class="footer-link-wrapper">
+            {companyLinks.map(link => (
+              <a href={link.href} class="global-link-block w-inline-block">
+                <div class="button-box-wrap">
+                  <div class="button-box">
+                    <div class="button-text">{link.text}</div>
+                    <div class="button-text-absolute">{link.text}</div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="margin-bottom margin-16px">
+            <h2 class="footer-link-column-title">Contact</h2>
+          </div>
+          <div class="footer-link-wrapper">
+            {contactInfo.map(info => (
+              <a href={info.href} class="global-link-block w-inline-block">
+                <div class="button-box-wrap">
+                  <div class="button-box">
+                    <div class="button-text">{info.text}</div>
+                    <div class="button-text-absolute">{info.text}</div>
+                  </div>
+                </div>
+              </a>
+            ))}
+            <div class="footer-text">{address}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="inner-wrapper footer-bottom-inner">
+        <div class="footer-bottom-column">
+          <p>© All rights reserved. <a href="https://www.flowfye.com/" class="global-link">Flowfye</a>.</p>
+        </div>
+        <div class="footer-bottom-column">
+          <p>Powered by <a href="https://www.webflow.com/" class="global-link">Webflow</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* Add any component-specific styles here */
+</style>
+
+<script>
+  // Add any necessary JavaScript for animations or interactions
+</script>

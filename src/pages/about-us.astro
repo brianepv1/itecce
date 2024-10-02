@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Landing from '../components/about-us/Landing.astro';
+import AboutStats from '../components/about-us/AboutStats.astro';
+import Process from '../components/about-us/Process.astro';
+import DesignEducation from '../components/about-us/DesignEducation.astro';
+import OurValues from '../components/about-us/OurValues.astro';
+import Teachers from '../components/about-us/Teachers.astro';
+import Careers from '../components/about-us/Careers.astro';
+---
+
+<Layout title="Itecce - Conoce nuestra historia, somos itecce" description='Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global.'>
+    <Landing />
+    <main class="main-wrapper">
+			<AboutStats />
+			<DesignEducation />
+			<Process />
+			<OurValues />
+			<Teachers />
+			<Careers />
+    </main>
+</Layout>

@@ -1,0 +1,54 @@
+---
+import EventCard from '../EventCard.astro';
+import { events } from '../../constants/events';
+---
+
+<section class="section-main background-gradient">
+  <div class="container">
+    <div class="inner-wrapper">
+      <div class="section-header home-course">
+        <div>
+          <div class="margin-bottom margin-12px">
+            <div class="section-header-subheading background-gradient">Our Courses</div>
+          </div>
+          <h2 class="section-header-heading">Our Popular online courses</h2>
+        </div>
+        <div class="button-container course-content">
+          <a href="/courses" class="button-secondary w-inline-block">
+            <div class="button-box-wrap">
+              <div class="button-box">
+                <div class="button-text">Get Started</div>
+                <div class="button-text-absolute">Get Started</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="course-content">
+        <div class="course-content-collection-wrapper w-dyn-list">
+          <div role="list" class="course-content-collection-list w-dyn-items">
+            {events.map(event => <EventCard event={event} />)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-decoration-star">
+    <div class="container container-decoration-star">
+      <div class="inner-wrapper decoration-star-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star-top">
+          <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="section-decoration-star">
+    <div class="container container-decoration-star">
+      <div class="inner-wrapper decoration-star-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star">
+          <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>

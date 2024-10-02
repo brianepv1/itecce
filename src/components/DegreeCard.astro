@@ -1,0 +1,46 @@
+---
+const { program } = Astro.props;
+---
+
+<div class="home-course-slider-item w-slide">
+  <div class="w-dyn-list">
+    <div role="list" class="collection-list w-dyn-items">
+      <div role="listitem" class="course-category-collection-item w-dyn-item">
+        <div class="home-course-slider-content">
+          <div class="margin-bottom margin-30px">
+            <img loading="lazy" src={program.image} alt={program.name} class="home-course-image">
+          </div>
+          <div class="margin-bottom margin-16px">
+            <h4 class="heading-h4">{program.name}</h4>
+          </div>
+          <div class="home-course-info">
+            <div class="home-course-info-item">
+              <div class="home-course-info-icon">
+                <div class="home-course-icon-inner"></div>
+              </div>
+              <div class="home-course-info-text">
+                <div>{program.courseCount}</div>
+                <div>Courses</div>
+              </div>
+            </div>
+            <div class="home-course-info-item">
+              <div class="home-course-info-icon">
+                <div class="home-course-icon-inner"></div>
+              </div>
+              <div class="home-course-info-text">
+                <div>{program.workshopCount}</div>
+                <div>Workshops</div>
+              </div>
+            </div>
+          </div>
+          <a href={`/carreras/${program.slug}`} class="home-course-cta-button w-inline-block">
+            <div>Ver Detalles</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="home-course-cta-icon">
+              <path d="M13.1724 12.0007L8.22266 7.05093L9.63688 5.63672L16.0008 12.0007L9.63688 18.3646L8.22266 16.9504L13.1724 12.0007Z" fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

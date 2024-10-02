@@ -1,0 +1,88 @@
+---
+// src/components/sections/Landing.astro
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<ViewTransitions />
+
+<section class="section-global-hero background-gradient">
+    <div class="container">
+      <div class="inner-wrapper home-hero">
+        <div class="home-hero-content">
+          <div class="margin-bottom margin-16px staggered-item">
+            <p data-w-id="8bcb3b5b-8f17-801b-edad-f0eb756d52b5" class="body-text-default fade-in">
+              <strong class="bold-text">Formando lideres en el mundo</strong>
+            </p>
+            <h1 data-w-id="e4627eab-09a9-002b-df16-bd5432b28818" class="home-hero-heading fade-in">
+              Universidad Itecce<br>
+            </h1>
+          </div>
+          <div class="margin-bottom margin-48px staggered-item">
+            <p data-w-id="5dcb10e5-d994-6915-de9c-944ee3ff1e9c" class="body-text-default fade-in">
+              Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy,
+              impulsado por la innovación, el conocimiento y el liderazgo global.
+            </p>
+          </div>
+          <div class="margin-bottom margin-40px staggered-item">
+            <div data-w-id="c6857f16-2ed4-eb7c-985b-d601b713c305" class="button-container fade-in">
+              <a href="courses.html" class="button-primary w-inline-block">
+                <div class="button-box-wrap">
+                  <div class="button-box">
+                    <div class="button-text">Explora nuestra carreras</div>
+                    <div class="button-text-absolute">Explora nuestra carreras</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div data-w-id="095a246c-b754-9a6b-e1e3-cad5dd6bb4e3" class="home-hero-info fade-in staggered-item delayed-item">
+            <img src="images/home-hero-info.png" loading="lazy" alt="Home info" class="home-hero-info-image">
+            <p>Mas de <strong>2,000</strong> personas ya son parte de universidad Itecce</p>
+          </div>
+        </div>
+        <div data-w-id="b418c564-a328-b384-0d0b-eab4b1fa61eb" class="home-hero-figure fade-in">
+          <div class="home-hero-media-column">
+            <div class="home-hero-media-item">
+              <img src="images/home-hero-image-1.png" loading="lazy" alt="home hero image item">
+            </div>
+            <div class="home-hero-media-item">
+              <img src="images/home-hero-image-2.png" loading="lazy" alt="home hero image item">
+            </div>
+          </div>
+          <div class="home-hero-media-column _2">
+            <div class="home-hero-media-item video">
+              <div data-poster-url="https://cdn.prod.website-files.com/667f8fd8b0d0df360cabad8d%2F66bae7f4cf5ced4e81109f66_home-hero-video-media-poster-00001.jpg"
+                data-video-urls="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f647_home-hero-video-media-transcode.mp4,https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f647_home-hero-video-media-transcode.webm"
+                data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                class="media-default w-background-video w-background-video-atom">
+                <video id="2894898a-5a9b-746a-7a8e-4fd15dbb22d7-video" autoplay="" loop=""
+                  style="background-image:url(&quot;https://cdn.prod.website-files.com/667f8fd8b0d0df360cabad8d%2F66bae7f4cf5ced4e81109f66_home-hero-video-media-poster-00001.jpg&quot;)"
+                  muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                  <source src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f647_home-hero-video-media-transcode.mp4" data-wf-ignore="true">
+                  <source src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f647_home-hero-video-media-transcode.webm" data-wf-ignore="true">
+                </video>
+              </div>
+              <div data-w-id="ace956e5-096f-5662-5f6e-b7c5e567cae3" class="absolute-wrapper home-hero-video-poster" style="opacity: 0;">
+                <img src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f648_home-hero-media-poster.webp" loading="lazy"
+                  sizes="(max-width: 479px) 45vw, (max-width: 767px) 47vw, (max-width: 1279px) 22vw, 281.5px"
+                  srcset="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f648_home-hero-media-poster-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f648_home-hero-media-poster.webp 524w"
+                  alt="Home hero media poster" class="image-default">
+              </div>
+            </div>
+            <div class="home-hero-media-item">
+              <img src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f62b_home-hero-image-3.png" loading="lazy" alt="home hero image item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-decoration-star">
+      <div class="container container-decoration-star">
+        <div class="inner-wrapper decoration-star-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star">
+            <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+</section>

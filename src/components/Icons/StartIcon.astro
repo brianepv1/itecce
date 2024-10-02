@@ -1,0 +1,20 @@
+---
+interface Props {
+  filled: boolean;
+}
+
+const { filled } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  viewBox="0 0 20 20"
+  fill={filled ? "currentColor" : "none"}
+  class={filled ? "testimony-star-filled" : "testimony-star-stroked"}
+>
+  <path
+    d="M10.247 14.7805L10.0028 14.6437L9.75856 14.7804L4.82657 17.5412L5.92809 11.9974L5.98264 11.7229L5.77715 11.5329L1.62752 7.69547L7.24026 7.02999L7.51819 6.99703L7.63541 6.74289L10.0028 1.61051L12.3701 6.74289L12.4873 6.99703L12.7652 7.02999L18.378 7.69547L14.2284 11.5329L14.0229 11.7229L14.0774 11.9974L15.1789 17.5411L10.247 14.7805Z"
+    stroke="currentColor"
+  />
+</svg>

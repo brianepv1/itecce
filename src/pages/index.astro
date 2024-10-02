@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Landing from '../components/landing/Landing.astro';
+import DegreePrograms from '../components/landing/DegreePrograms.astro';
+import Events from '../components/landing/Events.astro';
+import Advantages from '../components/landing/Advantages.astro';
+import Faqs from '../components/landing/Faqs.astro';
+import Testimonials from '../components/landing/Testimonials.astro';
+import GlobalCTA from '../components/GlobalCTA.astro';
+---
+
+<Layout title="Itecce - Tu mejor opcion para la universidad" description='Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global.'>
+    <Landing />
+    <main class="main-wrapper">
+        <DegreePrograms />
+        <Events />
+        <Advantages />
+        <Testimonials />
+        <Faqs />
+        <GlobalCTA />
+    </main>
+</Layout>

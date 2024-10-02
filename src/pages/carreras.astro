@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Landing from '../components/carreras/Landing.astro';
+import CarrerasComponent from '../components/carreras/Carreras.astro';
+import Testimonials from '../components/landing/Testimonials.astro';
+import Faqs from '../components/landing/Faqs.astro';
+import GlobalCTA from '../components/GlobalCTA.astro';
+---
+
+<Layout title="Itecce - Carreras" description="Descubre nuestras carreras y programas de estudio. Encuentra la que se adapte a tus intereses y habilidades.">
+	<Landing />
+	<main class="main-wrapper">
+		<CarrerasComponent />
+		<Testimonials />
+		<Faqs />
+		<GlobalCTA />
+	</main>
+</Layout>

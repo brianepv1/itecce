@@ -1,0 +1,85 @@
+---
+import { testimonials } from '../../constants/testimonials';
+import StarIcon from '../Icons/StartIcon.astro';
+---
+
+<section class="section-main background-gradient">
+  <div class="container">
+    <div class="inner-wrapper">
+      <div class="section-header content-align-center">
+        <div class="margin-bottom margin-12px">
+          <div class="section-header-subheading background-gradient">Testimonials</div>
+        </div>
+        <div class="margin-bottom margin-24px">
+          <h2 class="section-header-heading">Our most satisfied Students</h2>
+        </div>
+      </div>
+      <div class="section-content global-testimony">
+        <div class="global-testimony-slider-wrapper w-slider" data-animation="slide" data-duration="500" data-infinite="true">
+          <div class="global-testimony-slider-mask w-slider-mask">
+            {testimonials.map((testimonial, index) => (
+              <div class="global-testimony-slider-item w-slide" role="group">
+                <div class="global-testimony-slider-content">
+                  <div class="testimony-slider-image">
+                    <div class="image-animated-mask">
+                      <div class="image-animated-scale">
+                        <img src={testimonial.image} loading="lazy" alt={testimonial.name} class="image-default" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimony-slider-details">
+                    <h3 class="testimony-slider-title">{testimonial.name}</h3>
+                    <div class="margin-bottom margin-24px">
+                      <div class="testimony-slider-subtitle">{testimonial.role}</div>
+                    </div>
+                    <div class="margin-bottom margin-40px">
+                      <blockquote class="testimony-slider-quote">{testimonial.quote}</blockquote>
+                    </div>
+                    <div class="testimony-star-images">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon filled={i < testimonial.stars} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="testimony-slider-arrow _1 w-slider-arrow-left" role="button" tabindex="0" aria-label="previous slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="testimony-slider-arrow-icon">
+              <path d="M3.21938 12.5309L9.96938 19.2809C10.1101 19.4216 10.301 19.5006 10.5 19.5006C10.699 19.5006 10.8899 19.4216 11.0306 19.2809C11.1714 19.1401 11.2504 18.9493 11.2504 18.7502C11.2504 18.5512 11.1714 18.3603 11.0306 18.2196L5.56031 12.7503H20.25C20.4489 12.7503 20.6397 12.6713 20.7803 12.5306C20.921 12.39 21 12.1992 21 12.0003C21 11.8014 20.921 11.6106 20.7803 11.47C20.6397 11.3293 20.4489 11.2503 20.25 11.2503H5.56031L11.0306 5.78103C11.1714 5.6403 11.2504 5.44943 11.2504 5.25041C11.2504 5.05139 11.1714 4.86052 11.0306 4.71979C10.8899 4.57906 10.699 4.5 10.5 4.5C10.301 4.5 10.1101 4.57906 9.96938 4.71979L3.21938 11.4697C3.14964 11.5394 3.09432 11.6221 3.05658 11.7131C3.01884 11.8042 2.99941 11.9018 2.99941 12.0003C2.99941 12.0989 3.01884 12.1965 3.05658 12.2875C3.09432 12.3786 3.14964 12.4613 3.21938 12.5309Z" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="testimony-slider-arrow _2 w-slider-arrow-right" role="button" tabindex="0" aria-label="next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="testimony-slider-arrow-icon">
+              <path d="M20.7809 12.5311L14.0308 19.2811C13.89 19.4218 13.6992 19.5009 13.5001 19.5009C13.3011 19.5009 13.1102 19.4218 12.9695 19.2811C12.8288 19.1404 12.7497 18.9495 12.7497 18.7505C12.7497 18.5515 12.8288 18.3606 12.9695 18.2199L18.4399 12.7505H3.75001C3.55109 12.7505 3.36033 12.6715 3.21967 12.5308C3.07902 12.3902 3 12.1994 3 12.0005C3 11.8016 3.07902 11.6108 3.21967 11.4701C3.36033 11.3295 3.55109 11.2505 3.75001 11.2505H18.4399L12.9695 5.7811C12.8288 5.64037 12.7497 5.4495 12.7497 5.25048C12.7497 5.05146 12.8288 4.86058 12.9695 4.71985C13.1102 4.57912 13.3011 4.50006 13.5001 4.50006C13.6992 4.50006 13.89 4.57912 14.0308 4.71985L20.7809 11.4699C20.8506 11.5395 20.9059 11.6222 20.9437 11.7133C20.9814 11.8043 21.0008 11.9019 21.0008 12.0005C21.0008 12.099 20.9814 12.1966 20.9437 12.2877C20.9059 12.3787 20.8506 12.4614 20.7809 12.5311Z" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-decoration-star">
+    <div class="container container-decoration-star">
+      <div class="inner-wrapper decoration-star-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star-top">
+          <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="section-decoration-star">
+    <div class="container container-decoration-star">
+      <div class="inner-wrapper decoration-star-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star">
+          <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Add your slider functionality here
+  // You might want to use a library like Swiper.js or implement your own slider logic
+</script>

@@ -1,0 +1,50 @@
+---
+
+import { advantages } from '../../constants/advantages';
+
+---
+
+<section class="section-main">
+  <div class="container">
+    <div class="inner-wrapper home-advantages">
+      <div class="home-advantages-figure">
+        <img src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f61c_home-advantages-image.webp"
+             loading="lazy"
+             sizes="(max-width: 479px) 93vw, (max-width: 991px) 46vw, (max-width: 1279px) 44vw, 543px"
+             srcset="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f61c_home-advantages-image-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f61c_home-advantages-image-p-800.webp 800w, https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f61c_home-advantages-image-p-1080.webp 1080w, https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f61c_home-advantages-image.webp 1360w"
+             alt="Home advantages">
+      </div>
+      <div class="home-advantages-content">
+        <div class="margin-bottom margin-12px">
+          <div class="section-header-subheading background-gradient">Why Choose Us</div>
+        </div>
+        <div class="margin-bottom margin-16px">
+          <h2 class="section-header-heading">The Educational Advantage of Ocera</h2>
+        </div>
+        <div class="margin-bottom margin-40px">
+          <p class="body-text-default">Create and sell online courses, build vibrant communities</p>
+        </div>
+        <div class="margin-bottom margin-48px">
+          <ul role="list" class="home-advantages-list">
+            {advantages.map((advantage, index) => (
+              <li class="home-advantages-list-item">
+                <img src={advantage.icon} loading="lazy" alt={`${advantage.text} icon`} class="home-advantages-icon">
+                <div>{advantage.text}</div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="button-container">
+          <a href="/about-us" class="button-primary w-inline-block">
+            <div class="button-box-wrap">
+              <div class="button-box">
+                <div class="button-text">About Us</div>
+                <div class="button-text-absolute">About Us</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

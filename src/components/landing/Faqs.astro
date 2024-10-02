@@ -1,0 +1,45 @@
+---
+import { faqs } from '../../constants/faqs';
+---
+
+<section class="section-main">
+  <div class="container">
+    <div class="inner-wrapper global-faq">
+      <div class="faq-header">
+        <div class="position-sticky">
+          <div class="margin-bottom margin-16px">
+            <div data-w-id="b868d995-daf3-381c-8c0c-db7c64a96ad5" class="section-header-subheading background-gradient">FAQ</div>
+          </div>
+          <h2 data-w-id="b868d995-daf3-381c-8c0c-db7c64a96ad7" class="section-header-heading">Frequently Asked Questions</h2>
+        </div>
+      </div>
+      <div class="faq-content">
+        {faqs.map((faq, index) => (
+          <div data-hover="false" data-delay="0" data-w-id="fa647135-f2a8-c031-2462-5c466dcf2867" class="faq-accordion-item w-dropdown">
+            <div class="faq-accordion-label w-dropdown-toggle" id={`w-dropdown-toggle-${index + 1}`} aria-controls={`w-dropdown-list-${index + 1}`} aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+              <div class="faq-accordion-label-text">{faq.question}</div>
+              <div class="faq-accordion-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 40" fill="none">
+                  <path d="M20.0013 11.6666V28.3333M28.3346 20H11.668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <nav class="faq-accordion-pane w-dropdown-list" id={`w-dropdown-list-${index + 1}`} aria-labelledby={`w-dropdown-toggle-${index + 1}`}>
+              <p class="faq-accordion-text">{faq.answer}</p>
+            </nav>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  <div class="horizontal-line-wrapper">
+    <div class="container">
+      <div class="horizontal-line"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Add your accordion functionality here
+  // This should handle opening/closing accordions, animations, etc.
+</script>
