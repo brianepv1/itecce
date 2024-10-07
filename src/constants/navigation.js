@@ -3,7 +3,8 @@ export default {
     src: "images/ItecceLogo.png",
     alt: "Itecce Logo",
     srcset: "images/ItecceLogo-p-500.png 500w, images/ItecceLogo-p-800.png 800w, images/ItecceLogo-p-1080.png 1080w, images/ItecceLogo-p-1600.png 1600w, images/ItecceLogo.png 1613w",
-    sizes: "129px"
+    sizes: "129px",
+		href: '/'
   },
   mobileLogo: {
     src: "images/brand-logo.svg",

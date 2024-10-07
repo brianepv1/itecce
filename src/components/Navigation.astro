@@ -6,11 +6,13 @@ import navigation from '../constants/navigation';
 <nav class="navigation">
     <div class="container">
       <div class="inner-wrapper navbar-inner">
-        <div class="navbar-navigation"><img src={navigation.logo.src} loading="lazy" width="129" height="Auto"
+        <div class="navbar-navigation">
+          <a href={navigation.logo.href} class="brand w-inline-block">
+						<img src={navigation.logo.src} loading="lazy" width="129" height="Auto"
             alt={navigation.logo.alt}
             srcset={navigation.logo.srcset}
             sizes="129px">
-          <a href={navigation.logo.href} class="brand w-inline-block"></a>
+					</a>
           <div class="nav-menu">
             <div class="navbar-inner-mobile">
               <a href={navigation.logo.href} class="brand w-inline-block"><img src={navigation.logo.src} loading="lazy"
