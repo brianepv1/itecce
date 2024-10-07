@@ -1,155 +1,192 @@
-export const degrees = [
-  {
-    id: 1,
-    name: "Development",
-    slug: "development",
-    image: "images/category-3.svg",
-    courseCount: 25,
-    workshopCount: 6,
-    description: "Learn to create and maintain software applications and systems.",
-    duration: "8 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Software Developer",
-      "Web Developer",
-      "Mobile App Developer",
-      "DevOps Engineer"
-    ]
-  },
-  {
-    id: 2,
-    name: "Marketing",
-    slug: "marketing",
-    image: "images/category-image-3.svg",
-    courseCount: 15,
-    workshopCount: 4,
-    description: "Master the art of promoting products and services in the digital age.",
-    duration: "8 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Digital Marketing Specialist",
-      "Brand Manager",
-      "Marketing Analyst",
-      "Social Media Strategist"
-    ]
-  },
-  {
-    id: 3,
-    name: "UI/UX",
-    slug: "ui-ux",
-    image: "images/category-image-2.svg",
-    courseCount: 25,
-    workshopCount: 4,
-    description: "Learn to design intuitive and engaging user interfaces and experiences.",
-    duration: "8 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "UI Designer",
-      "UX Researcher",
-      "Interaction Designer",
-      "Product Designer"
-    ]
-  },
-  {
-    id: 4,
-    name: "Data Analytics",
-    slug: "data-analytics",
-    image: "images/category-1.svg",
-    courseCount: 16,
-    workshopCount: 5,
-    description: "Learn to analyze and interpret complex data to drive business decisions.",
-    duration: "9 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Data Analyst",
-      "Business Intelligence Analyst",
-      "Data Scientist",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    id: 6,
-    name: "Content",
-    slug: "content",
-    image: "images/category-image-4.svg",
-    courseCount: 18,
-    workshopCount: 6,
-    description: "Master the art of creating engaging and effective content across various media.",
-    duration: "7 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Content Strategist",
-      "Copywriter",
-      "Content Marketing Manager",
-      "Social Media Content Creator"
-    ]
-  },
-  {
-    id: 7,
-    name: "Content",
-    slug: "content",
-    image: "images/category-image-4.svg",
-    courseCount: 18,
-    workshopCount: 6,
-    description: "Master the art of creating engaging and effective content across various media.",
-    duration: "7 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Content Strategist",
-      "Copywriter",
-      "Content Marketing Manager",
-      "Social Media Content Creator"
-    ]
-  },
-  {
-    id: 8,
-    name: "Content",
-    slug: "content",
-    image: "images/category-image-4.svg",
-    courseCount: 18,
-    workshopCount: 6,
-    description: "Master the art of creating engaging and effective content across various media.",
-    duration: "7 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Content Strategist",
-      "Copywriter",
-      "Content Marketing Manager",
-      "Social Media Content Creator"
-    ]
-  },
-  {
-    id: 9,
-    name: "Content",
-    slug: "content",
-    image: "images/category-image-4.svg",
-    courseCount: 18,
-    workshopCount: 6,
-    description: "Master the art of creating engaging and effective content across various media.",
-    duration: "7 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Content Strategist",
-      "Copywriter",
-      "Content Marketing Manager",
-      "Social Media Content Creator"
-    ]
-  },
-  {
-    id: 10,
-    name: "Content",
-    slug: "content",
-    image: "images/category-image-4.svg",
-    courseCount: 18,
-    workshopCount: 6,
-    description: "Master the art of creating engaging and effective content across various media.",
-    duration: "7 semestres",
-    degree: "Licenciatura",
-    careers: [
-      "Content Strategist",
-      "Copywriter",
-      "Content Marketing Manager",
-      "Social Media Content Creator"
-    ]
-  }
+export const highschool = [
+	{
+		id: 1,
+		name: 'Bachillerato General',
+		slug: 'bachillerato',
+		image: 'images/CarrerasSliderIcons/Bachillerato/BachilleratoGeneral.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial o Virtual',
+		description:
+			'Adquiere una educación integral, construyendo conocimientos fundamentales en diversas materias para prepararte para la educación superior o para diversas oportunidades laborales.',
+		duration: '8 semestres',
+		degree: 'Bachillerato',
+	},
+	{
+		id: 2,
+		name: 'Bachillerato Técnico en Comercio Exterior',
+		slug: 'bachillerato-tecnico-comercio-exterior',
+		image: 'images/CarrerasSliderIcons/Bachillerato/BachilleratoTecnicoComercio.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial o Virtual',
+		description:
+			'Desarrolla habilidades especializadas en comercio internacional, aprendiendo sobre mercados globales, regulaciones de exportación/importación y gestión logística para destacar en el ámbito comercial.',
+		duration: '8 semestres',
+		degree: 'Bachillerato',
+	},
+	{
+		id: 3,
+		name: 'Bachillerato Técnico en Seguridad Pública',
+		slug: 'bachillerato-tecnico-seguridad-publica',
+		image: 'images/CarrerasSliderIcons/Bachillerato/BachilleratoTecnicoSeguridad.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial o Virtual',
+		description:
+			'Obtén los conocimientos y habilidades necesarios para trabajar en el ámbito de la seguridad pública, con un enfoque en protocolos de seguridad, prácticas de aplicación de la ley y gestión de emergencias para proteger a las comunidades.',
+		duration: '8 semestres',
+		degree: 'Bachillerato',
+	},
+];
+
+export const bachelorDegrees = [
+	{
+		id: 1,
+		name: 'Ingeniería Mecánica Automotriz',
+		slug: 'ingenieria-mecanica-automotriz',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/IngenieriaMecanico.svg',
+		yearsCount: 3,
+		classFormat: 'Presencial Sabatino o Escolarizado',
+		description: 'Formación en el diseño, desarrollo y mantenimiento de vehículos automotores.',
+		duration: '8 semestres',
+		degree: 'Ingeniería',
+	},
+	{
+		id: 2,
+		name: 'Licenciatura en Administración',
+		slug: 'licenciatura-administracion',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaAdministracion.svg',
+		yearsCount: 3,
+		classFormat: 'Presencial o Virtual',
+		description: 'Enseñanza en la planificación, organización y control de recursos empresariales.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 3,
+		name: 'Licenciatura en Aduanas y Comercio Exterior',
+		slug: 'licenciatura-aduanas-y-comercio-exterior',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaEnAduanas.svg',
+		yearsCount: 3.4,
+		classFormat: 'Presencial o Virtual',
+		description:
+			'Capacitación en procesos de importación y exportación, y regulaciones internacionales.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 4,
+		name: 'Licenciatura en Ciencias de la Educación',
+		slug: 'licenciatura-ciencias-de-la-educacion',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaEducacion.svg',
+		yearsCount: 3.4,
+		classFormat: 'Presencial o Virtual',
+		description: 'Formación para la enseñanza y el desarrollo de sistemas educativos.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 5,
+		name: 'Licenciatura en Contabilidad',
+		slug: 'licenciatura-contabilidad',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaEnContabilidad.svg',
+		yearsCount: 3,
+		classFormat: 'Presencial o Virtual',
+		description: 'Preparación en la gestión de información financiera y contable de empresas.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 6,
+		name: 'Licenciatura en Derecho',
+		slug: 'licenciatura-derecho',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaDerecho.svg',
+		yearsCount: 3,
+		classFormat: 'Presencial o Virtual',
+		description: 'Estudios en el campo legal y la administración de justicia.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 7,
+		name: 'Licenciatura en Diseño Gráfico',
+		slug: 'licenciatura-diseno-grafico',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaDiseno.svg',
+		yearsCount: 3,
+		classFormat: 'Presencial o Virtual',
+		description: 'Formación en el diseño visual, publicidad y comunicación gráfica.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 8,
+		name: 'Licenciatura en Lengua Inglesa',
+		slug: 'licenciatura-lengua-inglesa',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaLengua.svg',
+		yearsCount: 3.4,
+		classFormat: 'Presencial o Virtual',
+		description: 'Formación especializada en el dominio del idioma inglés y su enseñanza.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+	{
+		id: 9,
+		name: 'Licenciatura en Nutrición',
+		slug: 'licenciatura-nutricion',
+		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/LicenciaturaNutricion.svg',
+		yearsCount: 3.4,
+		classFormat: 'Presencial Escolarizado',
+		description: 'Preparación en el análisis y desarrollo de planes alimenticios para la salud.',
+		duration: '8 semestres',
+		degree: 'Licenciatura',
+	},
+];
+
+export const masterDegrees = [
+	{
+		id: 1,
+		name: 'Maestría en Fiscal',
+		slug: 'maestria-fiscal',
+		image: 'images/CarrerasSliderIcons/Maestria/MaestriaFiscal.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial Modular',
+		description:
+			'Formación avanzada en legislación y procedimientos fiscales, con enfoque en la gestión tributaria.',
+		duration: '4 semestres',
+		degree: 'Maestría',
+	},
+	{
+		id: 2,
+		name: 'Maestría en Derecho Familiar',
+		slug: 'maestria-derecho-familiar',
+		image: 'images/CarrerasSliderIcons/Maestria/MaestriaDerechoFamiliar.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial Modular',
+		description:
+			'Especialización en el ámbito jurídico relacionado con las relaciones familiares y sus implicaciones legales.',
+		duration: '4 semestres',
+		degree: 'Maestría',
+	},
+	{
+		id: 3,
+		name: 'Maestría en Investigación Educativa',
+		slug: 'maestria-investigacion-educativa',
+		image: 'images/CarrerasSliderIcons/Maestria/MaestriaInvestigacionEducativa.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial Modular',
+		description:
+			'Formación en la investigación aplicada a los sistemas y prácticas educativas para mejorar la calidad educativa.',
+		duration: '4 semestres',
+		degree: 'Maestría',
+	},
+	{
+		id: 4,
+		name: 'Maestría en Gestión y Operación Aduanera',
+		slug: 'maestria-gestion-y-operacion-aduanera',
+		image: 'images/CarrerasSliderIcons/Maestria/MaestriaGestionAduanera.svg',
+		yearsCount: 2,
+		classFormat: 'Presencial Modular',
+		description:
+			'Capacitación avanzada en la gestión y operación de aduanas, con enfoque en el comercio exterior y regulaciones.',
+		duration: '4 semestres',
+		degree: 'Maestría',
+	},
 ];

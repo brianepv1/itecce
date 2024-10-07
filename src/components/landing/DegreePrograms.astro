@@ -1,6 +1,6 @@
 ---
 import DegreeCard from '../DegreeCard.astro';
-import { degrees } from '../../constants/degrees';
+import { highschool, bachelorDegrees, masterDegrees } from '../../constants/degrees';
 ---
 
 <section class="section-main">
@@ -13,7 +13,7 @@ import { degrees } from '../../constants/degrees';
 						style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
 						class="section-header-subheading background-gradient"
 					>
-						Our Services
+						Nuestras carreras
 					</div>
 				</div><div class="margin-bottom margin-24px">
 					<h2
@@ -21,21 +21,23 @@ import { degrees } from '../../constants/degrees';
 						style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
 						class="section-header-heading"
 					>
-						Our course category
+						El futuro en nuestra universidad
 					</h2>
 				</div><p
 					data-w-id="39cb2768-4d88-b0c2-19bb-d84985fd31ee"
 					style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
 					class="section-header-text"
 				>
-					Create and sell online courses, build vibrant communities, and monetize memberships — all
-					on a single, scalable platform.
+					Ofrecemos una plataforma completa para la educación de tus hijos, donde pueden acceder a
+					cursos académicos de alta calidad, formar parte de una comunidad vibrante y aprovechar
+					oportunidades únicas de aprendizaje.
 				</p>
 			</div>
+			<h3 class="section-header-heading">Bachillerato general y técnico</h3>
 			<div class="main-content-wrapper home-course-category">
 				<div class="home-course-slider w-slider">
 					<div class="home-course-slider-mask w-slider-mask">
-						{degrees.map(program => <DegreeCard program={program} />)}
+						{highschool.map(program => <DegreeCard program={program} />)}
 					</div>
 					<div
 						class="slider-arrow left-arrow w-slider-arrow-left"
@@ -52,7 +54,8 @@ import { degrees } from '../../constants/degrees';
 							class="slider-arrow-icon"
 							><path
 								d="M3.21938 12.5309L9.96938 19.2809C10.1101 19.4216 10.301 19.5006 10.5 19.5006C10.699 19.5006 10.8899 19.4216 11.0306 19.2809C11.1714 19.1401 11.2504 18.9493 11.2504 18.7502C11.2504 18.5512 11.1714 18.3603 11.0306 18.2196L5.56031 12.7503H20.25C20.4489 12.7503 20.6397 12.6713 20.7803 12.5306C20.921 12.39 21 12.1992 21 12.0003C21 11.8014 20.921 11.6106 20.7803 11.47C20.6397 11.3293 20.4489 11.2503 20.25 11.2503H5.56031L11.0306 5.78103C11.1714 5.6403 11.2504 5.44943 11.2504 5.25041C11.2504 5.05139 11.1714 4.86052 11.0306 4.71979C10.8899 4.57906 10.699 4.5 10.5 4.5C10.301 4.5 10.1101 4.57906 9.96938 4.71979L3.21938 11.4697C3.14964 11.5394 3.09432 11.6221 3.05658 11.7131C3.01884 11.8042 2.99941 11.9018 2.99941 12.0003C2.99941 12.0989 3.01884 12.1965 3.05658 12.2875C3.09432 12.3786 3.14964 12.4613 3.21938 12.5309Z"
-								fill="currentColor"></path></svg>
+								fill="currentColor"></path></svg
+						>
 					</div>
 					<div
 						class="slider-arrow w-slider-arrow-right"
@@ -69,61 +72,96 @@ import { degrees } from '../../constants/degrees';
 							class="slider-arrow-icon"
 							><path
 								d="M20.7809 12.531L14.0308 19.281C13.89 19.4218 13.6992 19.5008 13.5001 19.5008C13.3011 19.5008 13.1102 19.4218 12.9695 19.281C12.8288 19.1403 12.7497 18.9494 12.7497 18.7504C12.7497 18.5514 12.8288 18.3605 12.9695 18.2198L18.4399 12.7504H3.75001C3.55109 12.7504 3.36033 12.6714 3.21967 12.5307C3.07902 12.3901 3 12.1993 3 12.0004C3 11.8015 3.07902 11.6107 3.21967 11.4701C3.36033 11.3294 3.55109 11.2504 3.75001 11.2504H18.4399L12.9695 5.78104C12.8288 5.64031 12.7497 5.44944 12.7497 5.25042C12.7497 5.05139 12.8288 4.86052 12.9695 4.71979C13.1102 4.57906 13.3011 4.5 13.5001 4.5C13.6992 4.5 13.89 4.57906 14.0308 4.71979L20.7809 11.4698C20.8506 11.5394 20.9059 11.6222 20.9437 11.7132C20.9814 11.8043 21.0008 11.9019 21.0008 12.0004C21.0008 12.099 20.9814 12.1966 20.9437 12.2876C20.9059 12.3787 20.8506 12.4614 20.7809 12.531Z"
-								fill="currentColor"></path></svg>
+								fill="currentColor"></path></svg
+						>
 					</div>
-					<!-- Add navigation dots here -->
-					<div class="slide-nav display-none w-slider-nav w-round w-num">
-						<div
-							class="w-slider-dot w-active"
-							data-wf-ignore=""
-							aria-label="Show slide 1 of 5"
-							aria-pressed="true"
-							role="button"
-							tabindex="0"
-							style="margin-left: 3px; margin-right: 3px;"
+				</div>
+			</div>
+			<h3 class="section-header-heading">Licenciaturas e Ingenierías</h3>
+			<div class="main-content-wrapper home-course-category">
+				<div class="home-course-slider w-slider">
+					<div class="home-course-slider-mask w-slider-mask">
+						{bachelorDegrees.map(program => <DegreeCard program={program} />)}
+					</div>
+					<div
+						class="slider-arrow left-arrow w-slider-arrow-left"
+						role="button"
+						tabindex="0"
+						aria-controls="w-slider-mask-0"
+						aria-label="previous slide"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="100%"
+							viewBox="0 0 24 24"
+							fill="none"
+							class="slider-arrow-icon"
+							><path
+								d="M3.21938 12.5309L9.96938 19.2809C10.1101 19.4216 10.301 19.5006 10.5 19.5006C10.699 19.5006 10.8899 19.4216 11.0306 19.2809C11.1714 19.1401 11.2504 18.9493 11.2504 18.7502C11.2504 18.5512 11.1714 18.3603 11.0306 18.2196L5.56031 12.7503H20.25C20.4489 12.7503 20.6397 12.6713 20.7803 12.5306C20.921 12.39 21 12.1992 21 12.0003C21 11.8014 20.921 11.6106 20.7803 11.47C20.6397 11.3293 20.4489 11.2503 20.25 11.2503H5.56031L11.0306 5.78103C11.1714 5.6403 11.2504 5.44943 11.2504 5.25041C11.2504 5.05139 11.1714 4.86052 11.0306 4.71979C10.8899 4.57906 10.699 4.5 10.5 4.5C10.301 4.5 10.1101 4.57906 9.96938 4.71979L3.21938 11.4697C3.14964 11.5394 3.09432 11.6221 3.05658 11.7131C3.01884 11.8042 2.99941 11.9018 2.99941 12.0003C2.99941 12.0989 3.01884 12.1965 3.05658 12.2875C3.09432 12.3786 3.14964 12.4613 3.21938 12.5309Z"
+								fill="currentColor"></path></svg
 						>
-							1
-						</div><div
-							class="w-slider-dot"
-							data-wf-ignore=""
-							aria-label="Show slide 2 of 5"
-							aria-pressed="false"
-							role="button"
-							tabindex="-1"
-							style="margin-left: 3px; margin-right: 3px;"
+					</div>
+					<div
+						class="slider-arrow w-slider-arrow-right"
+						role="button"
+						tabindex="0"
+						aria-controls="w-slider-mask-0"
+						aria-label="next slide"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="100%"
+							viewBox="0 0 24 24"
+							fill="none"
+							class="slider-arrow-icon"
+							><path
+								d="M20.7809 12.531L14.0308 19.281C13.89 19.4218 13.6992 19.5008 13.5001 19.5008C13.3011 19.5008 13.1102 19.4218 12.9695 19.281C12.8288 19.1403 12.7497 18.9494 12.7497 18.7504C12.7497 18.5514 12.8288 18.3605 12.9695 18.2198L18.4399 12.7504H3.75001C3.55109 12.7504 3.36033 12.6714 3.21967 12.5307C3.07902 12.3901 3 12.1993 3 12.0004C3 11.8015 3.07902 11.6107 3.21967 11.4701C3.36033 11.3294 3.55109 11.2504 3.75001 11.2504H18.4399L12.9695 5.78104C12.8288 5.64031 12.7497 5.44944 12.7497 5.25042C12.7497 5.05139 12.8288 4.86052 12.9695 4.71979C13.1102 4.57906 13.3011 4.5 13.5001 4.5C13.6992 4.5 13.89 4.57906 14.0308 4.71979L20.7809 11.4698C20.8506 11.5394 20.9059 11.6222 20.9437 11.7132C20.9814 11.8043 21.0008 11.9019 21.0008 12.0004C21.0008 12.099 20.9814 12.1966 20.9437 12.2876C20.9059 12.3787 20.8506 12.4614 20.7809 12.531Z"
+								fill="currentColor"></path></svg
 						>
-							2
-						</div><div
-							class="w-slider-dot"
-							data-wf-ignore=""
-							aria-label="Show slide 3 of 5"
-							aria-pressed="false"
-							role="button"
-							tabindex="-1"
-							style="margin-left: 3px; margin-right: 3px;"
+					</div>
+				</div>
+			</div>
+			<h3 class="section-header-heading">Maestrías</h3>
+			<div class="main-content-wrapper home-course-category">
+				<div class="home-course-slider w-slider">
+					<div class="home-course-slider-mask w-slider-mask">
+						{masterDegrees.map(program => <DegreeCard program={program} />)}
+					</div>
+					<div
+						class="slider-arrow left-arrow w-slider-arrow-left"
+						role="button"
+						tabindex="0"
+						aria-controls="w-slider-mask-0"
+						aria-label="previous slide"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="100%"
+							viewBox="0 0 24 24"
+							fill="none"
+							class="slider-arrow-icon"
+							><path
+								d="M3.21938 12.5309L9.96938 19.2809C10.1101 19.4216 10.301 19.5006 10.5 19.5006C10.699 19.5006 10.8899 19.4216 11.0306 19.2809C11.1714 19.1401 11.2504 18.9493 11.2504 18.7502C11.2504 18.5512 11.1714 18.3603 11.0306 18.2196L5.56031 12.7503H20.25C20.4489 12.7503 20.6397 12.6713 20.7803 12.5306C20.921 12.39 21 12.1992 21 12.0003C21 11.8014 20.921 11.6106 20.7803 11.47C20.6397 11.3293 20.4489 11.2503 20.25 11.2503H5.56031L11.0306 5.78103C11.1714 5.6403 11.2504 5.44943 11.2504 5.25041C11.2504 5.05139 11.1714 4.86052 11.0306 4.71979C10.8899 4.57906 10.699 4.5 10.5 4.5C10.301 4.5 10.1101 4.57906 9.96938 4.71979L3.21938 11.4697C3.14964 11.5394 3.09432 11.6221 3.05658 11.7131C3.01884 11.8042 2.99941 11.9018 2.99941 12.0003C2.99941 12.0989 3.01884 12.1965 3.05658 12.2875C3.09432 12.3786 3.14964 12.4613 3.21938 12.5309Z"
+								fill="currentColor"></path></svg
 						>
-							3
-						</div><div
-							class="w-slider-dot"
-							data-wf-ignore=""
-							aria-label="Show slide 4 of 5"
-							aria-pressed="false"
-							role="button"
-							tabindex="-1"
-							style="margin-left: 3px; margin-right: 3px;"
+					</div>
+					<div
+						class="slider-arrow w-slider-arrow-right"
+						role="button"
+						tabindex="0"
+						aria-controls="w-slider-mask-0"
+						aria-label="next slide"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="100%"
+							viewBox="0 0 24 24"
+							fill="none"
+							class="slider-arrow-icon"
+							><path
+								d="M20.7809 12.531L14.0308 19.281C13.89 19.4218 13.6992 19.5008 13.5001 19.5008C13.3011 19.5008 13.1102 19.4218 12.9695 19.281C12.8288 19.1403 12.7497 18.9494 12.7497 18.7504C12.7497 18.5514 12.8288 18.3605 12.9695 18.2198L18.4399 12.7504H3.75001C3.55109 12.7504 3.36033 12.6714 3.21967 12.5307C3.07902 12.3901 3 12.1993 3 12.0004C3 11.8015 3.07902 11.6107 3.21967 11.4701C3.36033 11.3294 3.55109 11.2504 3.75001 11.2504H18.4399L12.9695 5.78104C12.8288 5.64031 12.7497 5.44944 12.7497 5.25042C12.7497 5.05139 12.8288 4.86052 12.9695 4.71979C13.1102 4.57906 13.3011 4.5 13.5001 4.5C13.6992 4.5 13.89 4.57906 14.0308 4.71979L20.7809 11.4698C20.8506 11.5394 20.9059 11.6222 20.9437 11.7132C20.9814 11.8043 21.0008 11.9019 21.0008 12.0004C21.0008 12.099 20.9814 12.1966 20.9437 12.2876C20.9059 12.3787 20.8506 12.4614 20.7809 12.531Z"
+								fill="currentColor"></path></svg
 						>
-							4
-						</div><div
-							class="w-slider-dot"
-							data-wf-ignore=""
-							aria-label="Show slide 5 of 5"
-							aria-pressed="false"
-							role="button"
-							tabindex="-1"
-							style="margin-left: 3px; margin-right: 3px;"
-						>
-							5
-						</div>
 					</div>
 				</div>
 			</div>
