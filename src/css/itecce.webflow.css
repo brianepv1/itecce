@@ -2390,16 +2390,14 @@ figure {
 	min-height: 180px;
 }
 
-.home-course-slider-content > div:nth-child(3) {
-	margin: 24px 0
-}
-
 .home-course-info {
-  grid-column-gap: 16px;
-  grid-row-gap: 8px;
+	grid-row-gap: 12px;
   flex-flow: wrap;
   font-size: 14px;
   display: flex;
+	flex-direction: column;
+	min-height: 80px;
+
 }
 
 .home-course-info-icon {
@@ -2755,6 +2753,21 @@ figure {
   font-weight: 600;
   line-height: 166.667%;
   display: flex;
+}
+
+.home-advantages-list-item img{
+	width: 40px;
+	height: 40px;
+}
+
+.home-advantages-list-item-icon{
+	background-image: linear-gradient(268deg, #4eb8df52 1.92%, #0093d93b 26.97%, #fff 92.72%);
+	border-radius: 50%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-secondary);
 }
 
 .section-content.about-stats {

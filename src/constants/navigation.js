@@ -13,7 +13,7 @@ export default {
   homeLink: "old-home.html",
   menuItems: [
     { href: "/", text: "Inicio" },
-    { href: "/about-us", text: "Nosotros" },
+    { href: "/acerca-de", text: "Nosotros" },
     { href: "/carreras", text: "Carreras" },
     { href: "/blog", text: "Blog" }
   ],

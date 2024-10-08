@@ -1,0 +1,36 @@
+---
+import EventCard from '../EventCard.astro';
+import { popularCourses } from '../../constants/popularCourses';
+---
+
+<section class="section-main background-gradient">
+  <div class="container">
+    <div class="inner-wrapper">
+      <div class="section-header home-course">
+        <div>
+          <div class="margin-bottom margin-12px">
+            <div class="section-header-subheading background-gradient">Nuestros programas</div>
+          </div>
+          <h2 class="section-header-heading">Nuestros programas mas populares</h2>
+        </div>
+        <div class="button-container course-content">
+          <a href="/carreras" class="button-secondary w-inline-block">
+            <div class="button-box-wrap">
+              <div class="button-box">
+                <div class="button-text">Conocenos</div>
+                <div class="button-text-absolute">Conocenos</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="course-content">
+        <div class="course-content-collection-wrapper w-dyn-list">
+          <div role="list" class="course-content-collection-list w-dyn-items">
+            {popularCourses.map(event => <EventCard event={event} />)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -11,13 +11,6 @@ const { event } = Astro.props;
             <img loading="lazy" src={event.image} alt={event.name} class="course-content-image">
           </div>
         </div>
-        <div class="course-price-token">
-          <div class="price-token-background"></div>
-          <div>
-            <div class="course-price-token-price">$</div>
-            <div class="course-price-token-price">{event.price}</div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="course-content-details-wrap">
@@ -38,7 +31,7 @@ const { event } = Astro.props;
             </div>
             <div class="course-content-info-text-wrap">
               <div class="course-content-info-text">{event.studentCount}</div>
-              <div class="course-content-info-text">students</div>
+              <div class="course-content-info-text">estudiantes</div>
             </div>
           </div>
           <div class="course-content-info-column">
@@ -63,20 +56,13 @@ const { event } = Astro.props;
           </div>
         </div>
         <div class="course-card-horizontal-rule"></div>
-        <div class="margin-bottom margin-16px">
-          <div class="course-content-card-author">
-            <div class="course-content-card-author-image">
-              <img loading="lazy" src={event.author.image} alt={event.author.name} class="image-default">
-            </div>
-            <div class="course-content-card-author-name">{event.author.name}</div>
-          </div>
-        </div>
+
         <div class="course-content-button">
-          <a href={`/course/${event.slug}`} class="button-ghost w-inline-block">
+          <a href={`/carreras/${event.slug}`} class="button-ghost w-inline-block">
             <div class="button-box-wrap">
               <div class="button-box">
-                <div class="button-text">Enroll Now</div>
-                <div class="button-text-absolute">Enroll Now</div>
+                <div class="button-text">Inscríbete ahora</div>
+                <div class="button-text-absolute">Inscríbete ahora</div>
               </div>
             </div>
           </a>

@@ -16,30 +16,32 @@ import { advantages } from '../../constants/advantages';
       </div>
       <div class="home-advantages-content">
         <div class="margin-bottom margin-12px">
-          <div class="section-header-subheading background-gradient">Why Choose Us</div>
+          <div class="section-header-subheading background-gradient">¿Por qué elegirnos?</div>
         </div>
         <div class="margin-bottom margin-16px">
-          <h2 class="section-header-heading">The Educational Advantage of Ocera</h2>
+          <h2 class="section-header-heading">La ventaja educativa de Itecce.</h2>
         </div>
         <div class="margin-bottom margin-40px">
-          <p class="body-text-default">Create and sell online courses, build vibrant communities</p>
+          <p class="body-text-default">Crece y aprende con nuestros programas presenciales y virtuales, conoce nuestras ventajas.</p>
         </div>
         <div class="margin-bottom margin-48px">
           <ul role="list" class="home-advantages-list">
             {advantages.map((advantage, index) => (
               <li class="home-advantages-list-item">
-                <img src={advantage.icon} loading="lazy" alt={`${advantage.text} icon`} class="home-advantages-icon">
-                <div>{advantage.text}</div>
+								<div class="home-advantages-list-item-icon">
+                  <img src={advantage.icon} loading="lazy" alt={`${advantage.text} icon`} class="home-advantages-icon">
+								</div>
+								<div>{advantage.text}</div>
               </li>
             ))}
           </ul>
         </div>
         <div class="button-container">
-          <a href="/about-us" class="button-primary w-inline-block">
+          <a href="/acerca-de" class="button-primary w-inline-block">
             <div class="button-box-wrap">
               <div class="button-box">
-                <div class="button-text">About Us</div>
-                <div class="button-text-absolute">About Us</div>
+                <div class="button-text">Acerca de nosotros</div>
+                <div class="button-text-absolute">Acerca de nosotros</div>
               </div>
             </div>
           </a>

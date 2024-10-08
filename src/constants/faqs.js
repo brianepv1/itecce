@@ -1,22 +1,26 @@
 export const faqs = [
   {
-    question: "What can I learn from Ocera?",
+    question: "¿Qué opciones de financiamiento y becas ofrece la universidad?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis diam, scelerisque eu nisl et, ornare varius diam. Maecenas a laoreet dolor. Fusce in justo porta, tincidunt quam non, condimentum massa."
   },
   {
-    question: "What happens after my trial is over?",
+    question: "¿Qué programas académicos y modalidades se ofrecen?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis diam, scelerisque eu nisl et, ornare varius diam. Maecenas a laoreet dolor. Fusce in justo porta, tincidunt quam non, condimentum massa."
   },
   {
-    question: "What is included in my Ocera membership?",
+    question: "¿Qué actividades extracurriculares y deportivas se pueden realizar en la escuela?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis diam, scelerisque eu nisl et, ornare varius diam. Maecenas a laoreet dolor. Fusce in justo porta, tincidunt quam non, condimentum massa."
   },
   {
-    question: "How do i do when i have a question?",
+    question: "¿Cómo es el ambiente académico y social en el campus?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis diam, scelerisque eu nisl et, ornare varius diam. Maecenas a laoreet dolor. Fusce in justo porta, tincidunt quam non, condimentum massa."
   },
   {
-    question: "How will i be kept informed of my case?",
+    question: "¿Qué certificaciones o reconocimientos puede obtener un estudiante?",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis diam, scelerisque eu nisl et, ornare varius diam. Maecenas a laoreet dolor. Fusce in justo porta, tincidunt quam non, condimentum massa."
+  },
+  {
+    question: "¿Cómo se celebran los logros académicos de los estudiantes?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis diam, scelerisque eu nisl et, ornare varius diam. Maecenas a laoreet dolor. Fusce in justo porta, tincidunt quam non, condimentum massa."
   }
 ];
