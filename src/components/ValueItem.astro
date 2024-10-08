@@ -1,0 +1,28 @@
+---
+interface Props {
+  icon: string;
+  title: string;
+  description: string;
+  altText: string;
+  nodeId: string;
+  dataWId: string;
+}
+
+const { icon, title, description, altText, nodeId, dataWId } = Astro.props;
+---
+
+<div
+  id={nodeId}
+  data-w-id={dataWId}
+  class="about-values-item background-white"
+>
+  <div class="margin-bottom margin-16px">
+    <div class="about-values-icon">
+      <img src={icon} loading="lazy" alt={altText} />
+    </div>
+  </div>
+  <div class="margin-bottom margin-16px">
+    <h3 class="about-values-title">{title}</h3>
+  </div>
+  <p class="text-small opacity-down">{description}</p>
+</div>

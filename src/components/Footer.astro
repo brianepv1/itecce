@@ -1,6 +1,7 @@
 ---
 // src/components/Footer.astro
 import { pageLinks, companyLinks, contactInfo} from '../constants/footer';
+import { GENERAL } from '../constants/constants'
 ---
 
 <footer class="footer background-gradient">
@@ -13,7 +14,7 @@ import { pageLinks, companyLinks, contactInfo} from '../constants/footer';
           </a>
         </div>
         <div class="margin-bottom margin-40px">
-          <p class="footer-info-text">Crece y aprende con nuestros programas presenciales y virtuales, conoce nuestras ventajas.</p>
+          <p class="footer-info-text">{GENERAL.marketing}</p>
         </div>
         <div class="button-container footer-button">
           <a href="/acerca-de" class="button-primary w-inline-block">
