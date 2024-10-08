@@ -1,6 +1,6 @@
 ---
 // src/components/Footer.astro
-import { pageLinks, companyLinks, contactInfo, address } from '../constants/footer';
+import { pageLinks, companyLinks, contactInfo} from '../constants/footer';
 ---
 
 <footer class="footer background-gradient">
@@ -8,19 +8,19 @@ import { pageLinks, companyLinks, contactInfo, address } from '../constants/foot
     <div class="footer-row layer-a">
       <div class="footer-column footer-info-column">
         <div class="margin-bottom margin-16px">
-          <a href="/old-home" class="brand footer-brand w-inline-block">
-            <img src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f540_brand-logo.svg" loading="lazy" alt="Brand Logo" class="brand-logo-image">
+          <a href="/" class="brand footer-brand w-inline-block">
+            <img src="/images/Logos/ItecceLogo.png" loading="lazy" alt="Brand Logo" class="brand-logo-image">
           </a>
         </div>
         <div class="margin-bottom margin-40px">
-          <p class="footer-info-text">Create and sell online courses, build vibrant communities, and monetize</p>
+          <p class="footer-info-text">Crece y aprende con nuestros programas presenciales y virtuales, conoce nuestras ventajas.</p>
         </div>
         <div class="button-container footer-button">
-          <a href="https://webflow.com/templates/designers/flowfye" class="button-primary w-inline-block">
+          <a href="/acerca-de" class="button-primary w-inline-block">
             <div class="button-box-wrap">
               <div class="button-box">
-                <div class="button-text">Buy Template</div>
-                <div class="button-text-absolute">Buy Template</div>
+                <div class="button-text">Conocenos</div>
+                <div class="button-text-absolute">Conocenos</div>
               </div>
             </div>
           </a>
@@ -37,7 +37,7 @@ import { pageLinks, companyLinks, contactInfo, address } from '../constants/foot
       <div class="footer-column footer-second-column-row">
         <div class="footer-column">
           <div class="margin-bottom margin-16px">
-            <h2 class="footer-link-column-title">Page</h2>
+            <h2 class="footer-link-column-title">General</h2>
           </div>
           <div class="footer-link-wrapper">
             {pageLinks.map(link => (
@@ -54,7 +54,7 @@ import { pageLinks, companyLinks, contactInfo, address } from '../constants/foot
         </div>
         <div class="footer-column">
           <div class="margin-bottom margin-16px">
-            <h2 class="footer-link-column-title">Company</h2>
+            <h2 class="footer-link-column-title">Recursos estudiantiles</h2>
           </div>
           <div class="footer-link-wrapper">
             {companyLinks.map(link => (
@@ -71,7 +71,7 @@ import { pageLinks, companyLinks, contactInfo, address } from '../constants/foot
         </div>
         <div class="footer-column">
           <div class="margin-bottom margin-16px">
-            <h2 class="footer-link-column-title">Contact</h2>
+            <h2 class="footer-link-column-title">Contactanos</h2>
           </div>
           <div class="footer-link-wrapper">
             {contactInfo.map(info => (
@@ -79,12 +79,14 @@ import { pageLinks, companyLinks, contactInfo, address } from '../constants/foot
                 <div class="button-box-wrap">
                   <div class="button-box">
                     <div class="button-text">{info.text}</div>
+										<div class="button-text">{info.phone}</div>
                     <div class="button-text-absolute">{info.text}</div>
                   </div>
                 </div>
               </a>
+							<div class="footer-text">{info.address}</div>
             ))}
-            <div class="footer-text">{address}</div>
+
           </div>
         </div>
       </div>
@@ -94,20 +96,9 @@ import { pageLinks, companyLinks, contactInfo, address } from '../constants/foot
     <div class="container">
       <div class="inner-wrapper footer-bottom-inner">
         <div class="footer-bottom-column">
-          <p>© All rights reserved. <a href="https://www.flowfye.com/" class="global-link">Flowfye</a>.</p>
-        </div>
-        <div class="footer-bottom-column">
-          <p>Powered by <a href="https://www.webflow.com/" class="global-link">Webflow</a>.</p>
+          <p>© 2024 - Todos los derechos reservados. <a href="/" class="global-link">Itecce</a>.</p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-<style>
-  /* Add any component-specific styles here */
-</style>
-
-<script>
-  // Add any necessary JavaScript for animations or interactions
-</script>

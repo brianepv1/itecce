@@ -1,9 +1,9 @@
 // src/data/footerData.js
 
 export const pageLinks = [
-  { text: 'Home', href: '/' },
-  { text: 'About Us', href: '/about-us' },
-  { text: 'Courses', href: '/courses' },
+  { text: 'Inicio', href: '/' },
+  { text: 'Nosotros', href: '/acerca-de' },
+  { text: 'Carreras', href: '/carreras' },
   { text: 'Blog', href: '/blog' },
 ];
 
@@ -15,8 +15,23 @@ export const companyLinks = [
 ];
 
 export const contactInfo = [
-  { text: '+(01) 2345 6789', href: 'tel:+(01)23456789' },
-  { text: 'demo@ocera.com', href: 'mailto:demo@ocera.com' },
+  {
+    text: 'Campus Manzanillo',
+    href: 'tel:+523143364050',
+    address: 'Rosa Morada No. 125, Valle de las Garzas. Código Postal 28219 Manzanillo, Colima',
+    phone: '(314) 3364050'
+  },
+  {
+    text: 'Campus Colima',
+    href: 'tel:+523123527364',
+    address: 'Calzada la Armonía No. 270 sector oriente C.P. 28020 Colima, Col.',
+    phone: '(312) 3527364'
+  },
+  {
+    text: 'Campus Chavarín',
+    href: 'tel:+523156881064',
+    address: 'Av. México No. 256, El Chavarín. Código Postal 28830 Manzanillo, Colima',
+    phone: '(315) 6881064'
+  }
 ];
 
-export const address = '2912 Meadowbrook Road, Los Angeles, CA 90017';

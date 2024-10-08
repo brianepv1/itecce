@@ -2329,7 +2329,6 @@ figure {
 }
 
 .section-header-heading {
-  text-transform: capitalize;
 }
 
 .section-header-heading.section-about-values {
@@ -2492,8 +2491,8 @@ figure {
 }
 
 .home-course-image {
-	width: 60px;
-	height: 60px;
+	width: 140px;
+	height: 140px;
 }
 
 .button-container {
@@ -7054,6 +7053,17 @@ figure {
     align-items: stretch;
   }
 
+
+  .inner-wrapper.home-hero .staggered-item {
+    word-break: break-word;
+		margin-top: 24px;
+  }
+
+	.inner-wrapper.home-hero .home-hero-heading{
+		font-size: 54px;
+		margin-top: 24px;
+	}
+
   .inner-wrapper.home-advantages {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
@@ -7243,7 +7253,8 @@ figure {
   }
 
   .home-course-image {
-    max-width: 44px;
+    width: 180px;
+		height: 180px;
   }
 
   .tab-navigation-link {

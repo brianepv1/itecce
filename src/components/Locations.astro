@@ -1,0 +1,157 @@
+---
+import { contactInfo } from '../constants/footer';
+
+const { subHeading, heading } = Astro.props;
+---
+
+<section class="section-main background-gradient">
+  <div class="container">
+    <div class="locations-wrapper">
+      <div class="locations-header">
+        <div class="margin-bottom margin-16px">
+          <div class="section-header-subheading background-gradient">{subHeading}</div>
+        </div>
+        <h2 class="section-header-heading">{heading}</h2>
+      </div>
+      <div class="locations-content">
+        <div class="locations-list">
+          {contactInfo.map((location) => (
+            <div class="location-item">
+              <h3 class="location-name">{location.text}</h3>
+              <p class="location-address">{location.address}</p>
+              <a href={location.href} class="location-phone">{location.phone}</a>
+            </div>
+          ))}
+        </div>
+        <div class="map-container" id="map"></div>
+      </div>
+    </div>
+  </div>
+	<div class="section-decoration-star">
+    <div class="container container-decoration-star">
+      <div class="inner-wrapper decoration-star-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star-top">
+          <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ contactInfo }}>
+// @ts-nocheck
+
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 9,
+    center: { lat: 19.0760, lng: -104.3140 }, // Center of Manzanillo, Colima
+  });
+
+  const geocoder = new google.maps.Geocoder();
+
+  contactInfo.forEach((location) => {
+    geocoder.geocode({ address: location.address }, (results, status) => {
+      if (status === "OK" && results && results[0]) {
+        const marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: location.text,
+        });
+
+        const infoWindow = new google.maps.InfoWindow({
+          content: `<h3>${location.text}</h3><p>${location.address}</p><p>${location.phone}</p>`,
+        });
+
+        marker.addListener("click", () => {
+          infoWindow.open(map, marker);
+        });
+      } else {
+        console.error(`Geocode was not successful for the following reason: ${status}`);
+      }
+    });
+  });
+}
+
+// Assign initMap to window object
+window.initMap = initMap;
+</script>
+
+<script async src={`https://maps.googleapis.com/maps/api/js?key=${import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMap`}></script>
+
+<style>
+  .section-main {
+    padding: 80px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .locations-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .locations-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section-header-subheading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .section-header-heading {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .horizontal-line {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 40px 0;
+  }
+  .locations-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .locations-list {
+    flex: 1;
+  }
+  .location-item {
+    margin-bottom: 30px;
+  }
+  .location-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .location-address {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .location-phone {
+    font-size: 16px;
+    color: #0093d9;
+    text-decoration: none;
+  }
+  .map-container {
+    flex: 1;
+    height: 400px;
+  }
+  .google-map {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  @media (max-width: 768px) {
+    .locations-content {
+      flex-direction: column;
+    }
+    .map-container {
+      height: 300px;
+    }
+  }
+</style>
