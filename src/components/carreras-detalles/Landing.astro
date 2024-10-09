@@ -1,0 +1,128 @@
+---
+
+const { program } = Astro.props;
+console.log(program);
+---
+
+<section class="section-global-hero background-gradient">
+	<div class="container">
+		<div class="inner-wrapper course-details-hero">
+			<div class="course-details-page hero-content">
+				<div
+					data-w-id="179d6f24-326e-99fe-081b-51a6dd877ebb"
+					class="breadcrumbs margin-bottom margin-16px"
+				>
+					<a href="/" class="breadcrumbs-link root">Inicio</a>
+					<div class="breadcrumbs-divider">
+						/
+					</div>
+					<a href="/carreras" class="breadcrumbs-link">Carreras</a>
+					<div class="breadcrumbs-divider">
+						/
+					</div>
+					<div>
+						<div class="breadcrumbs-link">{program.name}</div>
+					</div>
+				</div>
+				<div class="margin-bottom margin-16px">
+					<div
+						data-w-id="975b4de6-aaff-3d04-99ec-16bc2ae9724b"
+						style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+						class="course-details-hero-rating">
+						<div class="course-details-hero-total-sudents">
+							<div>{program.studentCount} estudiantes</div>
+						</div>
+					</div>
+				</div><div class="margin-bottom margin-40px">
+					<h1
+						data-w-id="975b4de6-aaff-3d04-99ec-16bc2ae97283"
+						style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+					>
+						{program.name}
+					</h1>
+				</div>
+
+				<div style="display: flex; flex-direction: column; gap: 16px;">
+					<a
+						data-w-id="975b4de6-aaff-3d04-99ec-16bc2ae97285"
+						href="https://sirvoes.sep.gob.mx/sirvoes/mvc/consultas"
+						class="course-details-page hero-author w-inline-block"
+					>
+						<div>R.V.O.E. </div>
+				</a>
+				<a href="/carreras" class="button-primary w-inline-block" style="max-width: 300px;">
+					<div class="button-box-wrap">
+						<div class="button-box">
+							<div class="button-text">Regresar a Carreras</div>
+							<div class="button-text-absolute">
+								Regresar a Carreras
+							</div>
+						</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+			<div
+				data-w-id="975b4de6-aaff-3d04-99ec-16bc2ae9728a"
+				style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+				class="course-details-hero-figure">
+				<a
+					href="#"
+					class="w-inline-block w-lightbox"
+					aria-label="open lightbox"
+					aria-haspopup="dialog">
+					<div class="course-details-hero-image">
+						<img
+							loading="lazy"
+							src={program.image}
+							alt=""
+							sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 280px, (max-width: 1279px) 46vw, 499px"
+							srcset={program.image}
+							class="image-default"
+						/>
+						<div class="lightbox-video-play-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 72 72" fill="none">
+								<circle cx="36" cy="36" r="36" fill="#86E7B8"></circle>
+								<path d="M47 36.4371L31.3392 45.4759L31.3392 27.3983L47 36.4371Z" fill="white"></path>
+							</svg>
+						</div>
+					</div>
+					<script type="application/json" class="w-json">
+						{
+							"items": [
+								{
+									"url": "https://www.youtube.com/watch?v=r233kDWShkA&t=3s&pp=ygUQd2ViZmxvdyBsaWdodGJveA%3D%3D",
+									"originalUrl": "https://www.youtube.com/watch?v=r233kDWShkA&t=3s&pp=ygUQd2ViZmxvdyBsaWdodGJveA%3D%3D",
+									"width": 854,
+									"height": 480,
+									"thumbnailUrl": "https://i.ytimg.com/vi/r233kDWShkA/hqdefault.jpg",
+									"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fr233kDWShkA%3Fstart%3D3%26feature%3Doembed%26start%3D3&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr233kDWShkA&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fr233kDWShkA%2Fhqdefault.jpg&args=start%3D3&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+									"type": "video"
+								}
+							],
+							"group": ""
+						}
+					</script>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section-decoration-star">
+		<div class="container container-decoration-star">
+			<div class="inner-wrapper decoration-star-inner">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="100%"
+					viewBox="0 0 80 80"
+					fill="none"
+					class="decoration-star">
+					<path
+						d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z"
+						fill="currentColor">
+					</path>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,8 +1,8 @@
 ---
-const { event } = Astro.props;
+const { event, class: className } = Astro.props;
 ---
 
-<div class="course-content-collection-item w-dyn-item">
+<div class={`course-content-collection-item w-dyn-item ${className || ''}`}>
   <div class="course-content-card">
     <div class="margin-bottom margin-20px">
       <div class="course-image-wrapper">
@@ -32,16 +32,6 @@ const { event } = Astro.props;
             <div class="course-content-info-text-wrap">
               <div class="course-content-info-text">{event.studentCount}</div>
               <div class="course-content-info-text">estudiantes</div>
-            </div>
-          </div>
-          <div class="course-content-info-column">
-            <div class="course-content-info-image">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none">
-                <path d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z" fill="currentColor"></path>
-              </svg>
-            </div>
-            <div class="course-content-info-text-wrap">
-              <div class="course-content-info-text">{event.rating}</div>
             </div>
           </div>
           <div class="course-content-info-column">

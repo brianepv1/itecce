@@ -2563,6 +2563,10 @@ figure {
   overflow: hidden;
 }
 
+.course-content-collection-item.background-tertiary {
+  background-color: var(--color-tertiary);
+}
+
 .course-content-card {
   z-index: 1;
   cursor: pointer;
@@ -2601,9 +2605,9 @@ figure {
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
   grid-auto-columns: 1fr;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
+	flex-direction: column;
 }
 
 .button-secondary {
@@ -2644,10 +2648,7 @@ figure {
 }
 
 .course-content-info-column {
-  flex: 0 auto;
   justify-content: center;
-  align-items: center;
-  min-width: 27%;
   display: inline-flex;
 }
 

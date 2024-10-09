@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Landing from '../../components/carreras-detalles/Landing.astro'
+import CourseDetailContent from '../../components/carreras-detalles/courseDetailContent.astro'
+import GlobalCTA from '../../components/GlobalCTA.astro';
+import { allCourses } from '../../components/carreras/Carreras.astro';
+import { GENERAL } from '../../constants/constants';
+
+export function getStaticPaths() {
+  return allCourses.map(course => ({
+    params: { slug: course.slug },
+    props: { program: course },
+  }));
+}
+
+const { program } = Astro.props;
+---
+
+<Layout title={GENERAL.title} description={GENERAL.description}>
+	<Landing program={program} />
+	<main>
+		<CourseDetailContent program={program} />
+		<GlobalCTA />
+	</main>
+</Layout>

@@ -8,9 +8,10 @@ import Faqs from '../components/landing/Faqs.astro';
 import Testimonials from '../components/landing/Testimonials.astro';
 import GlobalCTA from '../components/GlobalCTA.astro';
 import Locations from '../components/Locations.astro';
+import { GENERAL } from '../constants/constants';
 ---
 
-<Layout title="Itecce - Tu mejor opcion para la universidad" description='Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global.'>
+<Layout title={GENERAL.title} description={GENERAL.description}>
     <Landing />
     <main class="main-wrapper">
         <DegreePrograms />

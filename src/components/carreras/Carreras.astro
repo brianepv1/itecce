@@ -1,3 +1,14 @@
+---
+import { bachelorDegrees } from '../../constants/carreras/bachelor';
+import { engineeringDegrees } from '../../constants/carreras/bachelor';
+import { highschool } from '../../constants/carreras/highschool';
+import { masterDegrees } from '../../constants/carreras/master';
+import EventCard from '../EventCard.astro';
+
+export const allCourses = [...bachelorDegrees, ...engineeringDegrees, ...highschool, ...masterDegrees];
+
+---
+
 <section id="Courses" class="section-main">
 	<div class="container">
 		<div class="inner-wrapper">
@@ -7,17 +18,18 @@
 						data-w-id="c7e27eff-3c13-5966-5f3e-d5cedfdeedf9"
 						class="section-header-subheading background-gradient"
 					>
-						Our Courses
+						Nuestros programas
 					</div>
 				</div><div class="margin-bottom margin-24px">
 					<h2
 						data-w-id="c7e27eff-3c13-5966-5f3e-d5cedfdeedfc"
 						class="section-header-heading"
 					>
-						Our Popular online courses
+						Conoce nuestros programas de preparatoria, universidad y maestrias
 					</h2>
 				</div>
-			</div><div
+			</div>
+			<div
 				data-current="All"
 				data-easing="ease"
 				data-duration-in="300"
@@ -30,73 +42,61 @@
 					role="tablist"
 				>
 					<a
-						data-w-tab="All"
+						data-w-tab="Todos"
 						class="tab-navigation-link w-inline-block w-tab-link w--current"
 						id="w-tabs-0-data-w-tab-0"
 						href="#w-tabs-0-data-w-pane-0"
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-0"
-						aria-selected="true"><div>All</div></a
-					><a
-						data-w-tab="Free Course"
+						aria-selected="true"><div>Todos</div></a
+					>
+					<a
+						data-w-tab="Preparatoria"
 						class="tab-navigation-link w-inline-block w-tab-link"
 						id="w-tabs-0-data-w-tab-1"
 						href="#w-tabs-0-data-w-pane-1"
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-1"
 						aria-selected="false"
-						tabindex="-1"><div>Free Course</div></a
-					><a
-						data-w-tab="Data Analytics"
+						tabindex="-1"><div>Preparatoria</div></a
+					>
+					<a
+						data-w-tab="Licenciaturas"
 						class="tab-navigation-link w-inline-block w-tab-link"
 						id="w-tabs-0-data-w-tab-2"
 						href="#w-tabs-0-data-w-pane-2"
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-2"
 						aria-selected="false"
-						tabindex="-1"><div>Data Analytics</div></a
-					><a
-						data-w-tab="UI/UI Design"
+						tabindex="-1"><div>Licenciaturas</div></a
+					>
+					<a
+						data-w-tab="Ingenierias"
 						class="tab-navigation-link w-inline-block w-tab-link"
 						id="w-tabs-0-data-w-tab-3"
 						href="#w-tabs-0-data-w-pane-3"
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-3"
 						aria-selected="false"
-						tabindex="-1"><div>UI/UI Design</div></a
-					><a
-						data-w-tab="Development"
+						tabindex="-1"><div>Ingenierias</div></a
+					>
+					<a
+						data-w-tab="Maestrias"
 						class="tab-navigation-link w-inline-block w-tab-link"
 						id="w-tabs-0-data-w-tab-4"
 						href="#w-tabs-0-data-w-pane-4"
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-4"
 						aria-selected="false"
-						tabindex="-1"><div>Development</div></a
-					><a
-						data-w-tab="Content Writing"
-						class="tab-navigation-link w-inline-block w-tab-link"
-						id="w-tabs-0-data-w-tab-5"
-						href="#w-tabs-0-data-w-pane-5"
-						role="tab"
-						aria-controls="w-tabs-0-data-w-pane-5"
-						aria-selected="false"
-						tabindex="-1"><div>Content Writing</div></a
-					><a
-						data-w-tab="Marketing"
-						class="tab-navigation-link w-inline-block w-tab-link"
-						id="w-tabs-0-data-w-tab-6"
-						href="#w-tabs-0-data-w-pane-6"
-						role="tab"
-						aria-controls="w-tabs-0-data-w-pane-6"
-						aria-selected="false"
-						tabindex="-1"><div>Marketing</div></a>
-				</div><div
+						tabindex="-1"><div>Maestrias</div></a
+					>
+				</div>
+				<div
 					data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb1"
 					class="tab-content w-tab-content"
 				>
 					<div
-						data-w-tab="All"
+						data-w-tab="Todos"
 						class="tab-pane w-tab-pane w--tab-active"
 						id="w-tabs-0-data-w-pane-0"
 						role="tabpanel"
@@ -105,737 +105,19 @@
 						<div class="course-content">
 							<div class="course-content-collection-wrapper w-dyn-list">
 								<div role="list" class="course-content-collection-list w-dyn-items">
-									<div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69d_course-image-6.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69d_course-image-6-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69d_course-image-6.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Content</div>
-												</div><h3 class="course-content-title">
-													Mastering the Art of Blogging
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/mastering-the-art-of-blogging"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69c_course-image-5.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69c_course-image-5-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69c_course-image-5.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Data Analytics</div>
-												</div><h3 class="course-content-title">
-													Statistical Methods in Data Analytics
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/statistical-methods-in-data-analytics"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69b_course-image-4.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69b_course-image-4-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69b_course-image-4.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Data Analytics</div>
-												</div><h3 class="course-content-title">Data Analytics with Python</h3><div
-													class="course-card-horizontal-rule"
-												>
-												</div><div class="course-content-info">
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/data-analytics-with-python"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f694_course-image-1.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f694_course-image-1-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f694_course-image-1.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Content</div>
-												</div><h3 class="course-content-title">
-													User Experience (UX) Design Masterclass
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/user-experience-ux-design-masterclass"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f692_course-image-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f692_course-image-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f692_course-image-2.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">UI/UX</div>
-												</div><h3 class="course-content-title">
-													Innovative Product Design Masterclass Online Course
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">452</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">5</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/innovative-product-design-masterclass-online-course"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f693_course-image-3.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f693_course-image-3-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f693_course-image-3.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																45
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">UI/UX</div>
-												</div><h3 class="course-content-title">
-													Advanced Product Design Online Course
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">500</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">5</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/advanced-product-design-online-course"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div>
+									{allCourses.map((course) => (
+										<EventCard
+											event={course}
+											class="background-tertiary"
+											data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
+										/>
+									))}
 								</div>
 							</div>
 						</div>
-					</div><div
-						data-w-tab="Free Course"
+					</div>
+					<div
+						data-w-tab="Preparatoria"
 						class="tab-pane w-tab-pane"
 						id="w-tabs-0-data-w-pane-1"
 						role="tabpanel"
@@ -843,13 +125,20 @@
 					>
 						<div class="course-content">
 							<div class="course-content-collection-wrapper w-dyn-list">
-								<div class="error-state-empty-state with-icon w-dyn-empty">
-									<div>No items found.</div>
+								<div role="list" class="course-content-collection-list w-dyn-items">
+									{highschool.map((course) => (
+										<EventCard
+											event={course}
+											class="background-tertiary"
+											data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
+										/>
+									))}
 								</div>
 							</div>
 						</div>
-					</div><div
-						data-w-tab="Data Analytics"
+					</div>
+					<div
+						data-w-tab="Licenciaturas"
 						class="tab-pane w-tab-pane"
 						id="w-tabs-0-data-w-pane-2"
 						role="tabpanel"
@@ -858,253 +147,19 @@
 						<div class="course-content">
 							<div class="course-content-collection-wrapper w-dyn-list">
 								<div role="list" class="course-content-collection-list w-dyn-items">
-									<div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0f2a"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69c_course-image-5.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69c_course-image-5-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69c_course-image-5.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Data Analytics</div>
-												</div><h3 class="course-content-title">
-													Statistical Methods in Data Analytics
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/statistical-methods-in-data-analytics"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0f2a"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69b_course-image-4.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69b_course-image-4-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69b_course-image-4.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Data Analytics</div>
-												</div><h3 class="course-content-title">Data Analytics with Python</h3><div
-													class="course-card-horizontal-rule"
-												>
-												</div><div class="course-content-info">
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/data-analytics-with-python"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div>
+										{bachelorDegrees.map((course) => (
+											<EventCard
+												event={course}
+												class="background-tertiary"
+												data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
+											/>
+										))}
 								</div>
 							</div>
 						</div>
-					</div><div
-						data-w-tab="UI/UI Design"
+					</div>
+					<div
+						data-w-tab="Ingenierias"
 						class="tab-pane w-tab-pane"
 						id="w-tabs-0-data-w-pane-3"
 						role="tabpanel"
@@ -1113,254 +168,19 @@
 						<div class="course-content">
 							<div class="course-content-collection-wrapper w-dyn-list">
 								<div role="list" class="course-content-collection-list w-dyn-items">
-									<div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0f64"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f692_course-image-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f692_course-image-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f692_course-image-2.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">UI/UX</div>
-												</div><h3 class="course-content-title">
-													Innovative Product Design Masterclass Online Course
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">452</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">5</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/innovative-product-design-masterclass-online-course"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0f64"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f693_course-image-3.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f693_course-image-3-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f693_course-image-3.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																45
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">UI/UX</div>
-												</div><h3 class="course-content-title">
-													Advanced Product Design Online Course
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">500</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">5</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/advanced-product-design-online-course"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div>
+									{engineeringDegrees.map((course) => (
+										<EventCard
+											event={course}
+											class="background-tertiary"
+											data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
+										/>
+									))}
 								</div>
 							</div>
 						</div>
-					</div><div
-						data-w-tab="Development"
+					</div>
+					<div
+						data-w-tab="Maestrias"
 						class="tab-pane w-tab-pane"
 						id="w-tabs-0-data-w-pane-4"
 						role="tabpanel"
@@ -1368,278 +188,14 @@
 					>
 						<div class="course-content">
 							<div class="course-content-collection-wrapper w-dyn-list">
-								<div class="error-state-empty-state with-icon w-dyn-empty">
-									<div>No items found.</div>
-								</div>
-							</div>
-						</div>
-					</div><div
-						data-w-tab="Content Writing"
-						class="tab-pane w-tab-pane"
-						id="w-tabs-0-data-w-pane-5"
-						role="tabpanel"
-						aria-labelledby="w-tabs-0-data-w-tab-5"
-					>
-						<div class="course-content">
-							<div class="course-content-collection-wrapper w-dyn-list">
 								<div role="list" class="course-content-collection-list w-dyn-items">
-									<div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0fd8"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69d_course-image-6.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69d_course-image-6-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f69d_course-image-6.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Content</div>
-												</div><h3 class="course-content-title">
-													Mastering the Art of Blogging
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/mastering-the-art-of-blogging"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div><div
-										data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0fd8"
-										role="listitem"
-										class="course-content-collection-item w-dyn-item"
-									>
-										<div class="course-content-card background-tertiary">
-											<div class="margin-bottom margin-20px">
-												<div class="course-image-wrapper">
-													<div class="image-animated-mask">
-														<div
-															class="image-animated-scale"
-														>
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f694_course-image-1.webp"
-																alt=""
-																sizes="(max-width: 479px) 85vw, (max-width: 767px) 91vw, (max-width: 991px) 42vw, (max-width: 1279px) 27vw, 348px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f694_course-image-1-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f694_course-image-1.webp 690w"
-																class="course-content-image"
-															/>
-														</div>
-													</div><div class="course-price-token">
-														<div class="price-token-background"></div><div>
-															<div class="course-price-token-price">$</div><div
-																class="course-price-token-price"
-															>
-																32
-															</div>
-														</div>
-													</div>
-												</div>
-											</div><div class="course-content-details-wrap">
-												<div class="margin-bottom margin-16px">
-													<div class="content-category">Content</div>
-												</div><h3 class="course-content-title">
-													User Experience (UX) Design Masterclass
-												</h3><div class="course-card-horizontal-rule"></div><div
-													class="course-content-info"
-												>
-													<div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 14 14"
-																fill="none"
-																><path
-																	d="M2.33594 12.8335C2.33594 10.2562 4.42527 8.16683 7.0026 8.16683C9.57994 8.16683 11.6693 10.2562 11.6693 12.8335H10.5026C10.5026 10.9005 8.93559 9.3335 7.0026 9.3335C5.06961 9.3335 3.5026 10.9005 3.5026 12.8335H2.33594ZM7.0026 7.5835C5.06885 7.5835 3.5026 6.01725 3.5026 4.0835C3.5026 2.14975 5.06885 0.583496 7.0026 0.583496C8.93635 0.583496 10.5026 2.14975 10.5026 4.0835C10.5026 6.01725 8.93635 7.5835 7.0026 7.5835ZM7.0026 6.41683C8.29177 6.41683 9.33594 5.37266 9.33594 4.0835C9.33594 2.79433 8.29177 1.75016 7.0026 1.75016C5.71344 1.75016 4.66927 2.79433 4.66927 4.0835C4.66927 5.37266 5.71344 6.41683 7.0026 6.41683Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">423</div><div
-																class="course-content-info-text"
-															>
-																students
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9991 12.1733L3.2968 14.8054L4.34702 9.51985L0.390625 5.86112L5.74198 5.22663L7.9991 0.333252L10.2562 5.22663L15.6075 5.86112L11.6512 9.51985L12.7014 14.8054L7.9991 12.1733ZM7.9991 10.6453L10.8302 12.23L10.1979 9.04772L12.58 6.84485L9.35803 6.46281L7.9991 3.5166L6.64012 6.46281L3.41817 6.84485L5.80024 9.04772L5.16792 12.23L7.9991 10.6453Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">4</div><div
-																class="course-content-info-text"
-															>
-																.0
-															</div>
-														</div>
-													</div><div class="course-content-info-column">
-														<div class="course-content-info-image">
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="100%"
-																viewBox="0 0 16 16"
-																fill="none"
-																><path
-																	d="M7.9987 14.6666C4.3168 14.6666 1.33203 11.6818 1.33203 7.99992C1.33203 4.31802 4.3168 1.33325 7.9987 1.33325C11.6806 1.33325 14.6654 4.31802 14.6654 7.99992C14.6654 11.6818 11.6806 14.6666 7.9987 14.6666ZM7.9987 13.3333C10.9442 13.3333 13.332 10.9455 13.332 7.99992C13.332 5.0544 10.9442 2.66659 7.9987 2.66659C5.05318 2.66659 2.66536 5.0544 2.66536 7.99992C2.66536 10.9455 5.05318 13.3333 7.9987 13.3333ZM8.66536 7.99992H11.332V9.33325H7.33203V4.66659H8.66536V7.99992Z"
-																	fill="currentColor"></path></svg>
-														</div><div class="course-content-info-text-wrap">
-															<div class="course-content-info-text">02h 30m</div>
-														</div>
-													</div>
-												</div><div class="course-card-horizontal-rule"></div><div
-													class="margin-bottom margin-16px"
-												>
-													<div class="course-content-card-author">
-														<div class="course-content-card-author-image">
-															<img
-																loading="lazy"
-																src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-																alt=""
-																sizes="(max-width: 479px) 17vw, (max-width: 1279px) 40px, (max-width: 1439px) 3vw, 40px"
-																srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-																class="image-default"
-															/>
-														</div><div class="course-content-card-author-name">Albert Flores</div>
-													</div>
-												</div><div class="course-content-button">
-													<a
-														data-w-id="dfe22b2f-22f3-6d6a-9d32-6547aa118750"
-														href="/course/user-experience-ux-design-masterclass"
-														class="button-ghost w-inline-block"
-														><div class="button-box-wrap">
-															<div
-																class="button-box"
-															>
-																<div class="button-text">Enroll Now</div><div
-																	class="button-text-absolute"
-																>
-																	Enroll Now
-																</div>
-															</div>
-														</div></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><div
-						data-w-tab="Marketing"
-						class="tab-pane w-tab-pane"
-						id="w-tabs-0-data-w-pane-6"
-						role="tabpanel"
-						aria-labelledby="w-tabs-0-data-w-tab-6"
-					>
-						<div class="course-content">
-							<div class="course-content-collection-wrapper w-dyn-list">
-								<div class="error-state-empty-state with-icon w-dyn-empty">
-									<div>No items found.</div>
+									{masterDegrees.map((course) => (
+										<EventCard
+											event={course}
+											class="background-tertiary"
+											data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
+										/>
+									))}
 								</div>
 							</div>
 						</div>

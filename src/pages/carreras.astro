@@ -5,9 +5,10 @@ import CarrerasComponent from '../components/carreras/Carreras.astro';
 import Testimonials from '../components/landing/Testimonials.astro';
 import Faqs from '../components/landing/Faqs.astro';
 import GlobalCTA from '../components/GlobalCTA.astro';
+import { GENERAL } from '../constants/constants';
 ---
 
-<Layout title="Itecce - Carreras" description="Descubre nuestras carreras y programas de estudio. Encuentra la que se adapte a tus intereses y habilidades.">
+<Layout title={GENERAL.title} description={GENERAL.description}>
 	<Landing />
 	<main class="main-wrapper">
 		<CarrerasComponent />

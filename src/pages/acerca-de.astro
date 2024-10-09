@@ -7,9 +7,10 @@ import DesignEducation from '../components/acerca-de/DesignEducation.astro';
 import OurValues from '../components/acerca-de/OurValues.astro';
 import Teachers from '../components/acerca-de/Teachers.astro';
 import Careers from '../components/acerca-de/Careers.astro';
+import { GENERAL } from '../constants/constants';
 ---
 
-<Layout title="Itecce - Conoce nuestra historia, somos itecce" description='Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global.'>
+<Layout title={GENERAL.title} description={GENERAL.description}>
     <Landing />
     <main class="main-wrapper">
 			<AboutStats />

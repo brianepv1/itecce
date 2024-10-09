@@ -1,0 +1,461 @@
+---
+const { program } = Astro.props;
+console.log('CourseDetailContent - program:', JSON.stringify(program, null, 2));
+import { detectAcademicPeriod } from '../../js/utils';
+
+
+---
+
+<section class="section-main course-details-content">
+	<div class="container">
+		<div class="inner-wrapper course-details-main">
+			<div class="section-content course-details-content">
+				<div
+					data-current="Course Content"
+					data-easing="ease"
+					data-duration-in="300"
+					data-duration-out="100"
+					class="tabs w-tabs"
+				>
+					<div
+						data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bad6"
+						class="tabs-navigation course-details w-tab-menu"
+						role="tablist"
+					>
+						<a
+							data-w-tab="Course Content"
+							class="tab-navigation-link w-inline-block w-tab-link w--current"
+							id="w-tabs-0-data-w-tab-0"
+							href="#w-tabs-0-data-w-pane-0"
+							role="tab"
+							aria-controls="w-tabs-0-data-w-pane-0"
+							aria-selected="true"
+						>
+							<div>Resumen del programa</div>
+						</a>
+						<a
+							data-w-tab="Overview"
+							class="tab-navigation-link w-inline-block w-tab-link"
+							id="w-tabs-0-data-w-tab-1"
+							href="#w-tabs-0-data-w-pane-1"
+							role="tab"
+							aria-controls="w-tabs-0-data-w-pane-1"
+							aria-selected="false"
+							tabindex="-1"
+						>
+							<div>Asignaturas</div>
+						</a>
+						<!--
+						<a
+							data-w-tab="Review"
+							class="tab-navigation-link w-inline-block w-tab-link"
+							id="w-tabs-0-data-w-tab-2"
+							href="#w-tabs-0-data-w-pane-2"
+							role="tab"
+							aria-controls="w-tabs-0-data-w-pane-2"
+							aria-selected="false"
+							tabindex="-1"
+						>
+							<div>Recursos</div>
+						</a>
+						-->
+					</div>
+					<div class="w-tab-content">
+						<div
+							data-w-tab="Course Content"
+							data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bae1"
+							class="w-tab-pane w--tab-active"
+							id="w-tabs-0-data-w-pane-0"
+							role="tabpanel"
+							aria-labelledby="w-tabs-0-data-w-tab-0"
+						>
+							<div class="rich-text-primary w-richtext">
+								<h2>Acerca del programa</h2>
+								<p>
+									{program.description}
+								</p>
+								<h3>En este programa tu aprenderás</h3>
+								<ul role="list">
+									{program.learningOutcomes.map(outcome => <li>{outcome}</li>)}
+								</ul>
+							</div>
+						</div>
+						<div
+							data-w-tab="Overview"
+							data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bb14"
+							style="transform-style: preserve-3d;"
+							class="w-tab-pane"
+							id="w-tabs-0-data-w-pane-1"
+							role="tabpanel"
+							aria-labelledby="w-tabs-0-data-w-tab-1"
+						>
+							<div class="course-details-course-videos">
+								<div class="margin-bottom margin-24px">
+									<div class="course-details-lesson-header">
+										<h2 class="course-details-lesson-heading">Asignaturas en estas clases</h2>
+										<div class="course-details-lesson-info">
+											<div class="course-details-number-of-lesson">
+												<div>{detectAcademicPeriod(program).yearsCount}</div>
+												<div>Años</div>
+											</div>
+											<div class="course-details-lesson-duration">
+												<div>{detectAcademicPeriod(program).duration} {detectAcademicPeriod(program).academicPeriod}</div>
+											</div>
+										</div>
+									</div>
+								</div><div class="w-dyn-list">
+									<div role="list" class="w-dyn-items">
+										{
+											program.curriculum.map((term, index) => (
+												<div role="listitem" class="course-module w-dyn-item">
+													<div class="course-details-wrap">
+														<div class="course-details-accordion-label">
+															<div class="course-details-accordion-icon">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="100%"
+																	viewBox="0 0 24 24"
+																	fill="none"
+																>
+																	<path
+																		d="M12.0006 13.1714L16.9504 8.22168L18.3646 9.63589L12.0006 15.9999L5.63672 9.63589L7.05093 8.22168L12.0006 13.1714Z"
+																		fill="currentColor"
+																	/>
+																</svg>
+															</div>
+															<h3 class="course-details-accordion-title">{term.term}</h3>
+														</div>
+														<div class="course-details-accordion-details _1">
+															<div class="w-dyn-list">
+																<div role="list" class="w-dyn-items">
+																	{term.courses &&
+																		term.courses.map(course => (
+																			<div role="listitem" class="w-dyn-item">
+																				<div class="course-details-video-item">
+																					<div class="course-details-video-title">
+																						<div class="course-details-video-icon">
+																							<svg
+																								xmlns="http://www.w3.org/2000/svg"
+																								width="100%"
+																								viewBox="0 0 72 72"
+																								fill="none"
+																							>
+																								<circle cx="36" cy="36" r="36" fill="#86E7B8" />
+																								<path
+																									d="M47 36.4371L31.3392 45.4759L31.3392 27.3983L47 36.4371Z"
+																									fill="white"
+																								/>
+																							</svg>
+																						</div>
+																						<h4 class="course-details-video-title-text">
+																							{course}
+																						</h4>
+																					</div>
+																				</div>
+																			</div>
+																		))}
+																	{term.options &&
+																		term.options.map(option => (
+																			<div role="listitem" class="w-dyn-item">
+																				<div class="course-details-video-item">
+																					<div class="course-details-video-title">
+																						<h4 class="course-details-video-title-text">
+																							{option.name}
+																						</h4>
+																					</div>
+																				</div>
+																				{option.courses.map(course => (
+																					<div role="listitem" class="w-dyn-item">
+																						<div class="course-details-video-item">
+																							<div class="course-details-video-title">
+																								<h5 class="course-details-video-title-text">
+																									{course.term}
+																								</h5>
+																							</div>
+																						</div>
+																						{course.subjects.map(subject => (
+																							<div role="listitem" class="w-dyn-item">
+																								<div class="course-details-video-item">
+																									<div class="course-details-video-title">
+																										<div class="course-details-video-icon">
+																											<svg
+																												xmlns="http://www.w3.org/2000/svg"
+																												width="100%"
+																												viewBox="0 0 72 72"
+																												fill="none"
+																											>
+																												<circle
+																													cx="36"
+																													cy="36"
+																													r="36"
+																													fill="#86E7B8"
+																												/>
+																												<path
+																													d="M47 36.4371L31.3392 45.4759L31.3392 27.3983L47 36.4371Z"
+																													fill="white"
+																												/>
+																											</svg>
+																										</div>
+																										<h6 class="course-details-video-title-text">
+																											{subject}
+																										</h6>
+																									</div>
+																								</div>
+																							</div>
+																						))}
+																					</div>
+																				))}
+																			</div>
+																		))}
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											))
+										}
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div
+							data-w-tab="Review"
+							data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bb42"
+							style="transform-style: preserve-3d;"
+							class="w-tab-pane"
+							id="w-tabs-0-data-w-pane-2"
+							role="tabpanel"
+							aria-labelledby="w-tabs-0-data-w-tab-2"
+						>
+							<div class="course-details-review-content">
+								<div class="margin-bottom margin-24px">
+									<h2 class="course-details-review-title">What our students say about us</h2>
+								</div><div class="margin-bottom margin-45px">
+									<p class="body-text-default">
+										Lorem ipsum dolor sit amet consectetur. Lorem et purus enim velit sed vel
+										laoreet enim non. Eros ultrices ut risus quisque curabitur aliquet eget nascetur
+										tincidunt. Iaculis curabitur tempor maecenas sit.
+									</p>
+								</div><div class="course-details-review-inner">
+									<div class="course-details-review-item">
+										<div class="course-details-review-figure">
+											<img
+												loading="lazy"
+												src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f59c_course-details-review-author-image-1%402x.webp"
+												alt="Course details author review"
+											/>
+										</div><div class="course-details-review-details">
+											<div class="margin-bottom margin-24px">
+												<h3 class="course-details-review-author-name">Andy J. Smith</h3><div
+													class="course-details-review-designation"
+												>
+													Product Designer
+												</div>
+											</div><div class="course-details-review-text">
+												<div class="margin-bottom margin-8px">
+													<h4 class="course-details-review-main-title">
+														Love this learning platform”
+													</h4>
+												</div><p class="body-text-default">
+													Pellentesque urna adipiscing nunc a tellus mattis eu molestie magna
+													bibendum massa ut quis venenatis id blandit augue non fringilla sapien.
+												</p>
+											</div>
+										</div>
+									</div><div class="course-details-review-item">
+										<div class="course-details-review-figure">
+											<img
+												loading="lazy"
+												src="https://cdn.prod.website-files.com/66fb75f0a77f88302082f4ef/66fb75f1a77f88302082f59d_course-details-review-author-image-2%402x.webp"
+												alt="Course details author review"
+											/>
+										</div><div class="course-details-review-details">
+											<div class="margin-bottom margin-24px">
+												<h3 class="course-details-review-author-name">Seth Regan</h3><div
+													class="course-details-review-designation"
+												>
+													Product Designer
+												</div>
+											</div><div class="course-details-review-text">
+												<div class="margin-bottom margin-8px">
+													<h4 class="course-details-review-main-title">
+														I found a job thanks to you”
+													</h4>
+												</div><p class="body-text-default">
+													Pellentesque urna adipiscing nunc a tellus mattis eu molestie magna
+													bibendum massa ut quis venenatis id blandit augue non fringilla sapien.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+					</div>
+				</div>
+			</div><div class="section-sidebar course-details-content">
+				<div class="section-sidebar-inner">
+					<div data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bb6b" class="section-sidebar-content-top">
+						<div class="margin-bottom margin-12px">
+							<div class="course-details-sidbar-category">Informacion de contacto</div>
+						</div><div class="margin-bottom margin-40px">
+							<div class="course-details-sidebar-price">
+								<div class="course-details-sidebar-price-main">
+									<div>+56 9 65804434</div>
+								</div>
+							</div>
+						</div><div class="margin-bottom margin-40px">
+							<ul role="list" class="course-details-feature-list">
+								<li class="course-details-feature-list-item">
+									<div class="course-details-feature-list-icon">
+										<img src="/images/CarreraDetalles/CarreraPlay.svg" style="width: 24px; height: 24px;">
+									</div>
+									<div class="course-details-feature-text-wrap">
+										<div>{program.yearsCount} años de educación</div>
+									</div>
+								</li>
+								<li class="course-details-feature-list-item">
+									<div class="course-details-feature-list-icon">
+										<img src="/images/CarreraDetalles/CarreraToDo.svg" style="width: 24px; height: 24px;">
+									</div><div class="course-details-feature-text-wrap">
+										<div>{detectAcademicPeriod(program).duration} {detectAcademicPeriod(program).academicPeriod}</div>
+									</div>
+								</li><li class="course-details-feature-list-item">
+									<div class="course-details-feature-list-icon">
+										<img src="/images/CarreraDetalles/CarreraDocumento.svg" style="width: 24px; height: 24px;">
+									</div><div class="course-details-feature-text-wrap">
+										<div>{program.degree}</div>
+									</div>
+								</li><li class="course-details-feature-list-item">
+									<div class="course-details-feature-list-icon">
+										<img src="/images/CarreraDetalles/CarreraMonitor.svg" style="width: 24px; height: 24px;">
+									</div>
+									<div>{program.classFormat}</div>
+								</li><li class="course-details-feature-list-item">
+									<div class="course-details-feature-list-icon">
+										<img src="/images/CarreraDetalles/CarreraCertificate.svg" style="width: 24px; height: 24px;">
+									</div><div>Certificate of completion</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bba2"
+						class="section-sidebar-content-bottom"
+					>
+						<div class="margin-bottom margin-32px">
+							<h4 class="section-sidbar-title">Coordinador escolar</h4>
+						</div><div class="margin-bottom margin-16px">
+							<div class="course-details-page hero-author">
+								<div class="corse-details-page hero-author-image">
+									<img
+										loading="lazy"
+										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
+										alt=""
+										sizes="(max-width: 479px) 24vw, (max-width: 1439px) 48px, (max-width: 1919px) 3vw, 48px"
+										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
+									/>
+								</div><div>Albert Flores</div>
+							</div>
+						</div><div class="margin-bottom margin-40px">
+							<p class="body-text-default">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus velit, rutrum
+								hendrerit blandit id, pellentesque ut felis. Etiam arcu urna, fringilla vitae metus
+								et, pulvinar feugiat diam. Donec eget interdum libero. Fusce a pretium.
+							</p>
+						</div>
+						<!--
+						<a
+							data-w-id="d231f69f-2ab7-e92c-e561-1ee59ad3bbaf"
+							href="/expert/albert-flores"
+							class="course-details-sidebar-bottom-cta w-inline-block"
+							>
+							<div class="button-box-wrap">
+								<div
+									style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+									class="button-box">
+									<div class="button-text">View Full Bio</div>
+									<div class="button-text-absolute">
+										View Full Bio
+									</div>
+								</div>
+							</div>
+							<div class="button-icon-24px">
+								<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none">
+									<path
+										d="M13.1724 12.0007L8.22266 7.05093L9.63688 5.63672L16.0008 12.0007L9.63688 18.3646L8.22266 16.9504L13.1724 12.0007Z"
+										fill="currentColor">
+									</path>
+									</svg>
+							</div>
+						</a>
+						 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><div class="horizontal-line-wrapper">
+		<div class="container"><div class="horizontal-line"></div></div>
+	</div>
+</section>
+
+<style>
+	.course-details-accordion-details {
+		transition: height 0.3s ease-out;
+		overflow: hidden;
+	}
+
+	.course-details-accordion-icon {
+		transition: transform 0.3s ease-out;
+	}
+
+	.course-details-accordion-label.is-open .course-details-accordion-icon {
+		transform: rotate(180deg);
+	}
+</style>
+<script>
+	// @ts-nocheck
+	document.addEventListener('DOMContentLoaded', event => {
+		const accordionLabels = document.querySelectorAll('.course-details-accordion-label');
+
+		// Initially close all accordions
+		accordionLabels.forEach(label => {
+			const content = label.nextElementSibling;
+			content.style.height = '0px';
+			content.style.overflow = 'hidden';
+		});
+
+		accordionLabels.forEach(label => {
+			label.addEventListener('click', e => {
+				e.preventDefault(); // Prevent default Webflow behavior
+
+				const content = label.nextElementSibling;
+				const isOpen = content.style.height !== '0px';
+
+				// Close all other accordions
+				accordionLabels.forEach(otherLabel => {
+					if (otherLabel !== label) {
+						const otherContent = otherLabel.nextElementSibling;
+						otherContent.style.height = '0px';
+						otherLabel.classList.remove('is-open');
+						otherContent.classList.remove('is-open');
+					}
+				});
+
+				if (isOpen) {
+					// Close accordion
+					content.style.height = '0px';
+					label.classList.remove('is-open');
+					content.classList.remove('is-open');
+				} else {
+					// Open accordion
+					content.style.height = content.scrollHeight + 'px';
+					label.classList.add('is-open');
+					content.classList.add('is-open');
+				}
+			});
+		});
+	});
+</script>
