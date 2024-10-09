@@ -536,19 +536,29 @@ export const bachelorDegrees = [
 					{
 						name: "Contabilidad General",
 						courses: [
-							"Seminario de casos contables",
-							"Re expresión de estados financieros",
-							"Análisis e interpretación de estados financieros",
-							"Planeación fiscal"
+							{
+								term: "Noveno cuatrimestre",
+								subjects: [
+									"Seminario de casos contables",
+									"Re expresión de estados financieros",
+									"Análisis e interpretación de estados financieros",
+									"Planeación fiscal"
+								]
+							}
 						]
 					},
 					{
 						name: "Contabilidad Servicios Aduanales",
 						courses: [
-							"Nacimiento, constitución y administración de las agencias aduanales",
-							"Contabilidad para agencias aduanales",
-							"Tratamiento y control contable de una agencia aduanal",
-							"Seminario de casos contables de agencias aduanales"
+							{
+								term: "Noveno cuatrimestre",
+								subjects: [
+									"Nacimiento, constitución y administración de las agencias aduanales",
+									"Contabilidad para agencias aduanales",
+									"Tratamiento y control contable de una agencia aduanal",
+									"Seminario de casos contables de agencias aduanales"
+								]
+							}
 						]
 					}
 				]
