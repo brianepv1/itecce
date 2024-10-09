@@ -60146,6 +60146,7 @@ spurious results.`);
 						data.right = $el.children('.w-slider-arrow-right');
 						data.nav = $el.children('.w-slider-nav');
 						data.slides = data.mask.children('.w-slide');
+						//console.log(data.slides)
 						data.slides.each(ix.reset);
 						if (inRedraw) {
 							data.maskWidth = 0;
@@ -60157,6 +60158,7 @@ spurious results.`);
 							$el.attr('aria-label', 'carousel');
 						}
 						var slideViewId = data.mask.attr('id');
+						//console.log(slideViewId)
 						if (!slideViewId) {
 							slideViewId = 'w-slider-mask-' + i;
 							data.mask.attr('id', slideViewId);

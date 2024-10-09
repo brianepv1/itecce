@@ -5840,7 +5840,6 @@ figure {
 .navbar-dropdown-list-inner {
   grid-column-gap: 60px;
   grid-row-gap: 60px;
-  margin-bottom: 60px;
   display: flex;
 }
 

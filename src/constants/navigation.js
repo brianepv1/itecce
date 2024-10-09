@@ -15,47 +15,22 @@ export default {
     { href: "/", text: "Inicio" },
     { href: "/acerca-de", text: "Nosotros" },
     { href: "/carreras", text: "Carreras" },
-    { href: "/blog", text: "Blog" }
   ],
   pagesDropdown: {
-    label: "Pages",
+    label: "Reglamentos",
     columns: [
       {
         links: [
-          { href: "index.html", text: "Home", current: true },
-          { href: "about-us.html", text: "About Us" },
-          { href: "courses.html", text: "Courses" },
-          { href: "https://ocera.webflow.io/course/mastering-the-art-of-blogging", text: "Course Details" },
-          { href: "blog.html", text: "Blog" },
-          { href: "https://ocera.webflow.io/post/10-essential-skills-every-content-writer-needs", text: "Blog Details" },
-          { href: "https://ocera.webflow.io/expert/albert-flores", text: "Expert Details" }
+          { href: "https://www.universidaditecce.mx/_files/ugd/66e106_97a64edc941443e48df504889138da31.pdf", text: "Escolar Media Superior", current: true },
+          { href: "https://www.universidaditecce.mx/_files/ugd/66e106_38b5d50d99db4a20a5dfa0161bd8b5c9.pdf", text: "Escolar Educación Superior" },
+          { href: "https://drive.google.com/file/d/1FSGtdhx9Yt3k_YdpfBgzEB4bB8FPkW6B/view", text: "Biblioteca" },
+          { href: "https://drive.google.com/file/d/1XjabC-mU2S_03m9AALkGIIVbk6dZ71T2/view", text: "Centro de Cómputo" },
+          { href: "https://drive.google.com/file/d/14aUW4xMn6x41ppUutAZk0Nyt1WuTPNmv/view", text: "Finanzas" },
         ]
       },
-      {
-        links: [
-          { href: "contact-us.html", text: "Contact Us" },
-          { href: "contact-us.html", text: "Terms & Conditions" },
-          { href: "log-in.html", text: "Log In" },
-          { href: "sign-up.html", text: "Sign Up" },
-          { href: "reset-password.html", text: "Reset Password" },
-          { href: "404.html", text: "404" }
-        ]
-      },
-      {
-        links: [
-          { href: "utilities/style-guides.html", text: "Style Guides" },
-          { href: "utilities/licenses.html", text: "Licenses" },
-          { href: "utilities/changelog.html", text: "Changelogs" }
-        ],
-        specialLink: {
-          href: "https://webflow.com/templates/designers/flowfye",
-          text: "More Webflow Templates",
-          class: "navbar-dropdown-item more-templates-link"
-        }
-      }
     ],
     footer: {
-      copyright: "© Made By",
+      copyright: "",
       links: [
         { href: "https://www.flowfye.com", text: "Flowfye", class: "global-link" },
         { href: "https://webflow.com/", text: "Webflow" }
@@ -68,6 +43,17 @@ export default {
       ]
     }
   },
+	portalDropdown: {
+		label: "Portales",
+		columns: [
+			{
+				links: [
+					{ href: "https://elibro.net/es/lc/itecce/login_usuario/?next=/es/lc/itecce/inicio/", text: "Biblioteca Virtual" },
+					{ href: "https://c1-universidaditecce.algebraix.com/bin/g/start/default/?x_load=0", text: "Algebraix" },
+				]
+			}
+		]
+	},
   utilities: {
     search: {
       placeholder: "Search…",
