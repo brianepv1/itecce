@@ -12,40 +12,61 @@ interface Props {
 }
 
 import { GENERAL } from '../constants/constants';
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<meta property="og:url" content={Astro.url}
-		<meta name="viewport" content="width=device-width" />
+
+		<title>{title} | Universidad Itecce - Tu mejor opción para la universidad</title>
+		<meta name="description" content={description} />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/images/webclip.svg" />
+		<link rel="shortcut icon" type="image/x-icon" href="/images/Logos/favicon.ico" />
 
 		<!-- Open Graph / Facebook -->
-		 <meta property="og:site_name" content="Universidad Itecce" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Itecce - Innovación y Excelencia en Educación" />
-		<meta property="og:description" content="Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global." />
-		<meta property="og:image" content="https://static.wixstatic.com/media/54c83e_5cf8b42c1a374fa297251ad32174ae45~mv2.png" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={`${title} | Universidad Itecce`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://itecce.edu.mx/og-image-1200x630.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Universidad Itecce - Innovación y Excelencia en Educación" />
+		<meta property="og:site_name" content="Universidad Itecce" />
+		<meta property="og:locale" content="es_MX" />
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Itecce - Innovación y Excelencia en Educación" />
-		<meta name="twitter:description" content="Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global." />
-		<meta name="twitter:image" content="https://static.wixstatic.com/media/54c83e_5cf8b42c1a374fa297251ad32174ae45~mv2.png" />
+		<meta name="twitter:url" content={Astro.url} />
+		<meta name="twitter:title" content={`${title} | Universidad Itecce`} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="https://itecce.edu.mx/twitter-image-1200x600.jpg" />
+		<meta name="twitter:image:alt" content="Universidad Itecce - Innovación y Excelencia en Educación" />
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- LinkedIn -->
+		<meta property="og:image" content="https://itecce.edu.mx/linkedin-image-1200x627.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="627" />
+
+		<!-- WhatsApp -->
+		<meta property="og:image" content="https://itecce.edu.mx/whatsapp-image-300x300.jpg" />
+		<meta property="og:image:width" content="300" />
+		<meta property="og:image:height" content="300" />
+
+		<!-- Additional tags -->
+		<meta name="theme-color" content="#4285f4" />
+		<link rel="canonical" href={Astro.url} />
+
+		<!-- Preconnect and preload -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="shortcut icon" type="image/x-icon" href="/images/Logos/favicon.ico" />
-		<link rel="apple-touch-icon" href="/images/webclip.svg" />
-		<title>{GENERAL.title} | Universidad Itecce - Tu mejor opcion para la universidad</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="page-wrapper">

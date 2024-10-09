@@ -42,7 +42,6 @@ const { subHeading, heading } = Astro.props;
 // @ts-nocheck
 
 function initMap() {
-	console.log("Init Map", googleMapsApiKey);
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 9,
     center: { lat: 19.0760, lng: -104.3140 }, // Center of Manzanillo, Colima
