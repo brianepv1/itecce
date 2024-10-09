@@ -11,29 +11,30 @@ interface Props {
 	description: string;
 }
 
-const { title, description } = Astro.props;
-const ogImage = `https://static.wixstatic.com/media/54c83e_5cf8b42c1a374fa297251ad32174ae45~mv2.png`;
+import { GENERAL } from '../constants/constants';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
+		<meta name="description" content="Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global." />
 		<meta name="generator" content={Astro.generator} />
+		<meta property="og:url" content={Astro.url}
 		<meta name="viewport" content="width=device-width" />
 
 		<!-- Open Graph / Facebook -->
+		 <meta property="og:site_name" content="Universidad Itecce" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content={`${title} | Itecce University`} />
-		<meta property="og:description" content={description} />
-		<meta property="og:image" content={ogImage} />
+		<meta property="og:title" content="Itecce - Innovación y Excelencia en Educación" />
+		<meta property="og:description" content="Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global." />
+		<meta property="og:image" content="https://static.wixstatic.com/media/54c83e_5cf8b42c1a374fa297251ad32174ae45~mv2.png" />
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={`${title} | Itecce University`} />
-		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content={ogImage} />
+		<meta name="twitter:title" content="Itecce - Innovación y Excelencia en Educación" />
+		<meta name="twitter:description" content="Descubre la Universidad que transforma vidas: donde tu futuro comienza hoy, impulsado por la innovación, el conocimiento y el liderazgo global." />
+		<meta name="twitter:image" content="https://static.wixstatic.com/media/54c83e_5cf8b42c1a374fa297251ad32174ae45~mv2.png" />
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +45,7 @@ const ogImage = `https://static.wixstatic.com/media/54c83e_5cf8b42c1a374fa297251
 		/>
 		<link rel="shortcut icon" type="image/x-icon" href="/images/Logos/favicon.ico" />
 		<link rel="apple-touch-icon" href="/images/webclip.svg" />
-		<title>{title} | Universidad Itecce - Tu mejor opcion para la universidad</title>
+		<title>{GENERAL.title} | Universidad Itecce - Tu mejor opcion para la universidad</title>
 	</head>
 	<body>
 		<div class="page-wrapper">
