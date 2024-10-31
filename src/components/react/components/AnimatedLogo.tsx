@@ -7,6 +7,9 @@ interface AnimatedLogoProps {
   shouldAnimate: boolean;
 }
 
+const SLOGAN = "Innovaci\u00F3n y Excelencia en Educaci\u00F3n";
+
+
 export const AnimatedLogo: React.FC<AnimatedLogoProps> = ({ shouldAnimate }) => (
   <>
     <div className="relative w-32 h-32 mb-8 sm:w-48 sm:h-48 md:w-64 md:h-64">
@@ -65,7 +68,7 @@ export const AnimatedLogo: React.FC<AnimatedLogoProps> = ({ shouldAnimate }) => 
         ITECCE
       </span>
       <span className="text-xl tracking-widest text-[#0093d9] mt-2 sm:text-2xl md:text-3xl">
-				Innovación y Excelencia en Educación
+				{SLOGAN}
       </span>
     </motion.div>
   </>
