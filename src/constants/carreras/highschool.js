@@ -1,3 +1,7 @@
+// @ts-check
+/* eslint-disable */
+// -*- coding: utf-8 -*-
+
 export const highschool = [
   {
     id: 1,

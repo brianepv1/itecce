@@ -65,7 +65,7 @@ export const AnimatedLogo: React.FC<AnimatedLogoProps> = ({ shouldAnimate }) => 
         ITECCE
       </span>
       <span className="text-xl tracking-widest text-[#0093d9] mt-2 sm:text-2xl md:text-3xl">
-        UNIVERSIDAD
+				Innovación y Excelencia en Educación
       </span>
     </motion.div>
   </>
