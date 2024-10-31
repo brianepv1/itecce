@@ -11,11 +11,21 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "astro": "^4.15.10"
+    "@astrojs/react": "^3.6.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^4.15.10",
+    "framer-motion": "^11.11.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@astrojs/tailwind": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "tailwindcss": "^3.4.14"
   }
 }

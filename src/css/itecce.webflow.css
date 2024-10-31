@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-primary: #00004e;
   --color-quinary: #f7f5f0;
@@ -10,6 +14,39 @@
   --color-quaternary: white;
   --white: white;
   --black: black;
+}
+
+
+/* src/styles/global.css */
+/* Base styles for smooth scrollbar handling */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Scroll lock styles */
+html.scroll-locked,
+html.scroll-locked body {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+/* Ensure content doesn't shift when scrollbar is hidden */
+html.scroll-locked body {
+  padding-right: var(--scrollbar-width, 0px);
+}
+
+/* Loading component styles */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f7f5f0, white, #f7f8f7);
+  isolation: isolate;
 }
 
 .w-commerce-commercecartwrapper {

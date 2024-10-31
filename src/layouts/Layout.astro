@@ -33,10 +33,16 @@ const { title, description } = Astro.props;
 		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={`${title} | Universidad Itecce`} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content=https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png />
+		<meta
+			property="og:image"
+			content="https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png"
+		/>
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content="Universidad Itecce - Innovación y Excelencia en Educación" />
+		<meta
+			property="og:image:alt"
+			content="Universidad Itecce - Innovación y Excelencia en Educación"
+		/>
 		<meta property="og:site_name" content="Universidad Itecce" />
 		<meta property="og:locale" content="es_MX" />
 
@@ -45,16 +51,28 @@ const { title, description } = Astro.props;
 		<meta name="twitter:url" content={Astro.url} />
 		<meta name="twitter:title" content={`${title} | Universidad Itecce`} />
 		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content=https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png />
-		<meta name="twitter:image:alt" content="Universidad Itecce - Innovación y Excelencia en Educación" />
+		<meta
+			name="twitter:image"
+			content="https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png"
+		/>
+		<meta
+			name="twitter:image:alt"
+			content="Universidad Itecce - Innovación y Excelencia en Educación"
+		/>
 
 		<!-- LinkedIn -->
-		<meta property="og:image" content=https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png />
+		<meta
+			property="og:image"
+			content="https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png"
+		/>
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="627" />
 
 		<!-- WhatsApp -->
-		<meta property="og:image" content=https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png />
+		<meta
+			property="og:image"
+			content="https://static.wixstatic.com/media/66e106_796be2e1d349493a8757fee88633bc3e~mv2.png/v1/fill/w_207,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo%20sin%20fondo%20blanco.png"
+		/>
 		<meta property="og:image:width" content="300" />
 		<meta property="og:image:height" content="300" />
 
@@ -65,13 +83,25 @@ const { title, description } = Astro.props;
 		<!-- Preconnect and preload -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Preload audio -->
+		<link
+			rel="preload"
+			href="/sounds/SonidoItecce.mp3"
+			as="fetch"
+			type="audio/mpeg"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
 		<div class="page-wrapper">
 			<Navigation />
 			<slot />
-			<Footer></Footer>
+			<Footer />
 		</div>
 		<!-- jQuery script from your original HTML -->
 		<script

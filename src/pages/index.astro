@@ -9,17 +9,32 @@ import Testimonials from '../components/landing/Testimonials.astro';
 import GlobalCTA from '../components/GlobalCTA.astro';
 import Locations from '../components/Locations.astro';
 import { GENERAL } from '../constants/constants';
+import ItecceLoading from '../components/react/ItecceLoading';
 ---
 
-<Layout title={GENERAL.title} description={GENERAL.description}>
-    <Landing />
-    <main class="main-wrapper">
-        <DegreePrograms />
-        <Events />
-        <Advantages />
-        <Testimonials />
-        <Faqs />
-				<Locations subHeading="Nuestras Ubicaciones" heading="Encuentra tu campus más cercano" />
-        <GlobalCTA />
-    </main>
-</Layout>
+<!-- Loading Component outside Layout -->
+<ItecceLoading client:load />
+
+<!-- Wrap everything else in a container -->
+<div id="mainContent" style="opacity: 0; transition: opacity 0.5s ease-in;">
+    <Layout title={GENERAL.title} description={GENERAL.description}>
+        <Landing />
+        <main class="main-wrapper">
+            <DegreePrograms />
+            <Events />
+            <Advantages />
+            <Testimonials />
+            <Faqs />
+            <Locations subHeading="Nuestras Ubicaciones" heading="Encuentra tu campus más cercano" />
+            <GlobalCTA />
+        </main>
+    </Layout>
+</div>
+
+<style>
+    /* Ensure loading component stays on top of everything */
+    :global(.fixed) {
+        position: fixed !important;
+        z-index: 9999 !important;
+    }
+</style>
