@@ -3,9 +3,8 @@
 // src/components/Navigation.astro
 import { Image } from 'astro:assets';
 import navigation from '../constants/navigation';
+import ItecceLogo from '../../public/images/Logos/ItecceLogo.png'
 
-// Import all images
-const images = import.meta.glob('/public/images/**/*');
 ---
 
 <nav class="navigation">
@@ -14,23 +13,25 @@ const images = import.meta.glob('/public/images/**/*');
         <div class="navbar-navigation">
           <a href={navigation.logo.href} class="brand w-inline-block">
             <Image
-              src={images['/public/images/Logos/ItecceLogo.png']()}
+              src={ItecceLogo}
               alt={navigation.logo.alt}
               width={129}
-              height="auto"
+              height={50}
+              quality={80}
             />
           </a>
           <div class="nav-menu">
             <div class="navbar-inner-mobile">
               <a href={navigation.logo.href} class="brand w-inline-block">
-								<Image
-								src={images['/public/images/Logos/ItecceLogo.png']()}
-								alt={navigation.logo.alt}
-								width={129}
-								height="auto"
-							/>
-								</a>
-									<button aria-label="Navbar Toggler" class="navbar-close"><svg
+                <Image
+                  src={ItecceLogo}
+                  alt={navigation.logo.alt}
+                  width={129}
+                  height={50}
+                  quality={80}
+                />
+              </a>
+              <button aria-label="Navbar Toggler" class="navbar-close"><svg
                   xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none">
                   <g clip-path="url(#clip0_1641_41352)">
                     <path

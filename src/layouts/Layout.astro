@@ -9,9 +9,6 @@ import '../css/normalize.css';
 import '../css/webflow.css';
 import '../css/itecce.webflow.css';
 
-// Import images with correct typing
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{jpeg,jpg,png,gif}');
-
 interface Props {
 	title: string;
 	description: string;
@@ -114,20 +111,6 @@ const { title, description } = Astro.props;
 			<slot />
 			<Footer />
 		</div>
-
-		{
-			Object.entries(images).map(async ([path, loader]) => {
-				const image = await loader();
-				return (
-					<Image
-						src={image}
-						alt="Logo Itecce"
-						width={path.includes('-p-500') ? 500 : 129}
-						height="auto"
-					/>
-				);
-			})
-		}
 
 		<!-- jQuery script from your original HTML -->
 		<script
