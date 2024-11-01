@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --color-primary: #00004e;
   --color-quinary: #f7f5f0;
@@ -18,12 +25,12 @@
 
 
 /* src/styles/global.css */
-/* Base styles for smooth scrollbar handling */
+/* Base styles for smooth scrollbar handling
 html {
   scrollbar-gutter: stable;
 }
-
-/* Scroll lock styles */
+*/
+/* Scroll lock styles
 html.scroll-locked,
 html.scroll-locked body {
   overflow: hidden;
@@ -32,13 +39,14 @@ html.scroll-locked body {
   -ms-touch-action: none;
 }
 
-/* Ensure content doesn't shift when scrollbar is hidden */
+ */
+/* Ensure content doesn't shift when scrollbar is hidden
 html.scroll-locked body {
   padding-right: var(--scrollbar-width, 0px);
 }
+	*/
 
-/* Loading component styles */
-.loading-overlay {
+/* Loading component styles
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -48,6 +56,8 @@ html.scroll-locked body {
   background: linear-gradient(to bottom right, #f7f5f0, white, #f7f8f7);
   isolation: isolate;
 }
+	*/
+
 
 .w-commerce-commercecartwrapper {
   display: inline-block;

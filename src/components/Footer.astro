@@ -1,7 +1,16 @@
 ---
+// @ts-nocheck
 // src/components/Footer.astro
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import { pageLinks, companyLinks, contactInfo} from '../constants/footer';
 import { GENERAL } from '../constants/constants'
+
+// Import all images with correct typing
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{png,jpg,jpeg,gif}');
+
+// Get the logo image
+const logoPath = '/src/assets/images/Logos/ItecceLogo.png';
 ---
 
 <footer class="footer background-gradient">
@@ -10,7 +19,15 @@ import { GENERAL } from '../constants/constants'
       <div class="footer-column footer-info-column">
         <div class="margin-bottom margin-16px">
           <a href="/" class="brand footer-brand w-inline-block">
-            <img src="/images/Logos/ItecceLogo.png" loading="lazy" alt="Brand Logo" class="brand-logo-image">
+            {images[logoPath] && (
+              <Image
+                src={await images[logoPath]()}
+                alt="Brand Logo"
+                width={129}
+                height="auto"
+                class="brand-logo-image"
+              />
+            )}
           </a>
         </div>
         <div class="margin-bottom margin-40px">

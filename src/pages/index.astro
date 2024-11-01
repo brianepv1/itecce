@@ -12,11 +12,12 @@ import { GENERAL } from '../constants/constants';
 import ItecceLoading from '../components/react/ItecceLoading';
 ---
 
-<!-- Loading Component outside Layout -->
+<!-- Loading Component outside Layout
 <ItecceLoading client:only="react" />
+-->
 
-<!-- Wrap everything else in a container -->
-<div id="mainContent" style="opacity: 0; transition: opacity 0.5s ease-in;">
+<!-- Wrap everything else in a container  style="opacity: 0; transition: opacity 0.5s ease-in;"-->
+<div id="mainContent" >
     <Layout title={GENERAL.title} description={GENERAL.description}>
         <Landing />
         <main class="main-wrapper">
@@ -32,9 +33,10 @@ import ItecceLoading from '../components/react/ItecceLoading';
 </div>
 
 <style>
-    /* Ensure loading component stays on top of everything */
+    /* Ensure loading component stays on top of everything
     :global(.fixed) {
         position: fixed !important;
         z-index: 9999 !important;
     }
+				 */
 </style>

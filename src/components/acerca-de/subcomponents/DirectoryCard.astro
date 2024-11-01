@@ -1,0 +1,49 @@
+---
+interface Props {
+  name: string;
+  title: string;
+  position: string;
+  href: string;
+  image?: string; // Optional, in case you want to add images later
+}
+
+const { name, title, position, href, image = "/images/default-profile.webp" } = Astro.props;
+---
+
+<div role="listitem" class="w-dyn-item">
+  <a
+    data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
+    href={href}
+    class="about-experts-list-card w-inline-block"
+  >
+    <div class="about-experts-list-figure">
+      <div class="about-expert-background-decoration">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          viewBox="0 0 101 101"
+          fill="none"
+        >
+          <path
+            id="Vector"
+            d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <img
+        src={image}
+        loading="lazy"
+        alt={`Foto de ${name}`}
+        class="image-default about-experts-list-image"
+      />
+    </div>
+    <div class="about-experts-list-body">
+      <h3 class="about-experts-main-margin">{name}</h3>
+      <div>
+        {title && <span class="text-sm text-gray-600">{title} • </span>}
+        {position}
+      </div>
+    </div>
+  </a>
+</div>

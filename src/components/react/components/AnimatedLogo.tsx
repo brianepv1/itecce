@@ -67,7 +67,7 @@ export const AnimatedLogo: React.FC<AnimatedLogoProps> = ({ shouldAnimate }) => 
       <span className="text-4xl font-bold tracking-wider text-[#00004e] sm:text-5xl md:text-6xl">
         ITECCE
       </span>
-      <span className="text-xl tracking-widest text-[#0093d9] mt-2 sm:text-2xl md:text-3xl">
+      <span className="text-xl tracking-widest text-[#0093d9] mt-2 sm:text-2xl md:text-3xl text-center">
 				{SLOGAN}
       </span>
     </motion.div>

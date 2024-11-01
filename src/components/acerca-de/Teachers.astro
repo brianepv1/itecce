@@ -1,4 +1,9 @@
-<section class="section-main">
+---
+import DirectoryCard from "./subcomponents/DirectoryCard.astro"
+import { directory } from "../../constants/directory";
+---
+
+<section class="section-main" id="directorio">
 	<div class="container">
 		<div class="inner-wrapper about-experts">
 			<div class="section-header content-align-center">
@@ -18,241 +23,17 @@
 			</div><div class="section-content about-experts">
 				<div class="w-dyn-list">
 					<div role="list" class="about-experts-collection-list w-dyn-items">
-						<div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/cameron-williamson"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div class="about-expert-background-decoration">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f66e_our-expert-8.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f66e_our-expert-8-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f66e_our-expert-8.webp 576w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Cameron Williamson</h3><div>
-										Web Designer
-									</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/jane-cooper"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div class="about-expert-background-decoration">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f65b_our-expert-7.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f65b_our-expert-7-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f65b_our-expert-7.webp 528w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Jane Cooper</h3><div>UI/UX Trainer</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/eleanor-pena"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div
-										class="about-expert-background-decoration"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f644_our-expert-6.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f644_our-expert-6-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f644_our-expert-6.webp 526w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Eleanor Pena</h3><div>UI/UX Designer</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/dolor-dolore-magna-eiusmod"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div
-										class="about-expert-background-decoration"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5c7_our-expert-1.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5c7_our-expert-1-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5c7_our-expert-1.webp 576w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Brooklyn Simmons</h3><div>
-										Senior Product Designer
-									</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/albert-flores"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div class="about-expert-background-decoration">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5e2_our-expert-2.webp 576w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Albert Flores</h3><div>
-										Marketing Coordinator
-									</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/annette-black"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div class="about-expert-background-decoration">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f610_our-experts-3.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f610_our-experts-3-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f610_our-experts-3.webp 576w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Annette Black</h3><div>
-										Medical Assistant
-									</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/devon-lane"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div
-										class="about-expert-background-decoration"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5f4_our-expert-4.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5f4_our-expert-4-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f5f4_our-expert-4.webp 576w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Devon Lane</h3><div>Web Developer</div>
-								</div></a>
-						</div><div role="listitem" class="w-dyn-item">
-							<a
-								data-w-id="6a4dfb9a-74b9-2477-e3bd-19ed6c8fc623"
-								href="/expert/ronald-richards"
-								class="about-experts-list-card w-inline-block"
-								><div class="about-experts-list-figure">
-									<div
-										class="about-expert-background-decoration"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100%"
-											viewBox="0 0 101 101"
-											fill="none"
-											><path
-												id="Vector"
-												d="M100.541 50.7253C87.8092 52.2562 75.9596 58.0315 66.8926 67.1245C57.8257 76.2175 52.0671 88.1013 50.5406 100.869C49.0168 88.1002 43.2591 76.2148 34.1917 67.1213C25.1242 58.0277 13.273 52.2534 0.540527 50.7253C13.2719 49.1944 25.1215 43.4192 34.1885 34.3261C43.2554 25.2331 49.014 13.3493 50.5406 0.581299C52.0671 13.3493 57.8257 25.2331 66.8926 34.3261C75.9596 43.4192 87.8092 49.1944 100.541 50.7253Z"
-												fill="currentColor"></path></svg>
-									</div><img
-										src="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f62a_our-expert-5.webp"
-										loading="lazy"
-										alt="Our expert's headshot"
-										sizes="(max-width: 479px) 93vw, (max-width: 767px) 46vw, (max-width: 991px) 47vw, (max-width: 1279px) 23vw, 289.078125px"
-										srcset="https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f62a_our-expert-5-p-500.webp 500w, https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f62a_our-expert-5.webp 576w"
-										class="image-default about-experts-list-image"
-									/>
-								</div><div class="about-experts-list-body">
-									<h3 class="about-experts-main-margin">Ronald Richards</h3><div>
-										UI/UX Designer
-									</div>
-								</div></a>
-						</div>
+						{
+							directory.map((person) => (
+								<DirectoryCard
+									name={person.name}
+									title={person.title}
+									position={person.position}
+									href={person.href}
+									image={person.image}
+								/>
+							))
+						}
 					</div>
 				</div>
 			</div>

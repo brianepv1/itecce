@@ -1062,7 +1062,7 @@ export const bachelorDegrees = [
 export const engineeringDegrees = [
 	{
 		id: 1,
-		name: 'Ingeniería Mecánica Automotriz',
+		name: 'Licenciatura en Ingeniería Mecánica Automotriz',
 		slug: 'ingenieria-mecanica-automotriz',
 		image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
 		category: 'Ingeniería',

@@ -40,7 +40,7 @@ export const highschool = [
 export const bachelorDegrees = [
 	{
 		id: 1,
-		name: 'Ingeniería Mecánica Automotriz',
+		name: 'Licenciatura en Ingeniería Mecánica Automotriz',
 		slug: 'ingenieria-mecanica-automotriz',
 		image: 'images/CarrerasSliderIcons/Licenciatura-Ingenieria/IngenieriaMecanico.svg',
 		yearsCount: 3,

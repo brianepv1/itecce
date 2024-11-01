@@ -1,0 +1,29 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { directory } from '../../../constants/directory';
+import { GENERAL } from '../../../constants/constants';
+import DirectoryDetails from '../../../components/maestros/DirectoryDetails.astro';
+
+export function getStaticPaths() {
+  return directory.map(person => {
+    // Split the href into segments
+    const [, , role, name] = person.href.split('/');
+
+    return {
+      params: {
+        role,  // e.g., "rector"
+        name   // e.g., "pedro-mancilla-jimenez"
+      },
+      props: { person }
+    };
+  });
+}
+
+const { person } = Astro.props;
+---
+
+<Layout title={GENERAL.title} description={GENERAL.description}>
+  <main>
+    <DirectoryDetails person={person} />
+  </main>
+</Layout>

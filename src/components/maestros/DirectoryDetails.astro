@@ -1,0 +1,82 @@
+---
+interface Props {
+  person: {
+    name: string;
+    title: string;
+    position: string;
+    department: string;
+    extension: string;
+    email: string;
+    phone: string;
+    href: string;
+    image?: string;
+  }
+}
+
+const { person } = Astro.props;
+const defaultImage = "https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f66e_our-expert-8.webp";
+---
+
+<header class="section-expert-details-hero background-gradient">
+  <div class="container">
+    <div class="inner-wrapper expert-details-hero">
+      <div class="expert-details-hero-content">
+        <div data-w-id="179d6f24-326e-99fe-081b-51a6dd877ebb" class="breadcrumbs">
+          <a href="/" class="breadcrumbs-link root">Inicio</a>
+          <div class="breadcrumbs-divider">/</div>
+          <a href="/acerca-de#directorio" class="breadcrumbs-link">Directorio</a>
+          <div class="breadcrumbs-divider">/</div>
+          <div>
+            <div class="breadcrumbs-link">{person.name}</div>
+          </div>
+        </div>
+
+        <div class="margin-bottom margin-16px">
+          <h1 data-w-id="3bfffb4e-0d02-91ac-0538-c8a42ecb3984">
+            {person.name}
+          </h1>
+        </div>
+
+        <div class="margin-bottom margin-24px">
+          <p data-w-id="8c525535-dbb5-2bf7-cfd9-304ed7a5c149" class="body-text-default">
+            {person.title && `${person.title} • `}{person.position}
+          </p>
+        </div>
+
+        <div data-w-id="d76f5ddd-5752-3f02-4570-12c664b42a1c" class="rich-text-experts w-richtext">
+          <h2>Información</h2>
+          <p>
+            {person.department}<br/>
+            {person.email && `Email: ${person.email}`}<br/>
+            {person.extension && `Extensión: ${person.extension}`}<br/>
+            {person.phone && `Teléfono: ${person.phone}`}
+          </p>
+        </div>
+      </div>
+
+      <div class="expert-details-hero-figure">
+        <div class="expert-details-hero-image-decoration">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 231 233" fill="none">
+            <path opacity="0.6" d="M230.232 116.429C200.92 119.983 173.639 133.393 152.764 154.506C131.889 175.619 118.63 203.211 115.116 232.857C111.608 203.209 98.3517 175.612 77.4756 154.498C56.5994 133.384 29.3142 119.977 0 116.429C29.3117 112.874 56.5933 99.4646 77.4682 78.3516C98.3432 57.2386 111.601 29.6459 115.116 0C118.63 29.6459 131.889 57.2386 152.764 78.3516C173.639 99.4646 200.92 112.874 230.232 116.429Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <img
+          src={person.image || defaultImage}
+          loading="lazy"
+          alt={`Foto de ${person.name}`}
+          class="expert-details-hero-image"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="section-decoration-star">
+    <div class="container container-decoration-star">
+      <div class="inner-wrapper decoration-star-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 80" fill="none" class="decoration-star">
+          <path d="M80 40C69.8149 41.2212 60.3352 45.8281 53.0817 53.0817C45.8282 60.3352 41.2212 69.8149 40 80C38.7811 69.814 34.1749 60.3331 26.9209 53.0791C19.6669 45.8251 10.186 41.219 0 40C10.1851 38.7788 19.6648 34.1719 26.9184 26.9183C34.1719 19.6648 38.7788 10.1851 40 0C41.2212 10.1851 45.8282 19.6648 53.0817 26.9183C60.3352 34.1719 69.8149 38.7788 80 40Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
