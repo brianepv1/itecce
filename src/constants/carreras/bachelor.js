@@ -176,7 +176,12 @@ export const bachelorDegrees = [
 					}
 				]
 			}
-		]
+		],
+		coordinatorName: "Alfonso Antonio Campos Reynoso",
+		coordinatorPosition: "Coordinador de Administración y Contabilidad",
+		coordinatorEmail: "coordinacionadmon@itecce.edu.mx",
+		coordinatorPhone: "314 100 1829",
+		coordinatorHref: "/directorio/coordinador-de-administracion-y-contabilidad/alfonso-campos-reynoso"
 	},
 	{
 		id: 2,
@@ -307,7 +312,12 @@ export const bachelorDegrees = [
 					"Inglés XII"
 				]
 			}
-		]
+		],
+		coordinatorName: "Ignacio Tadeo Nolasco Cárdenas",
+		coordinatorPosition: "Coordinador de Aduanas y Comercio Exterior",
+		coordinatorEmail: "coordinacionlace@itecce.edu.mx",
+		coordinatorPhone: "314 160 0647",
+		coordinatorHref: "/directorio/coordinador-de-aduanas-y-comercio-exterior/ignacio-nolasco-cardenas"
 	},
 	{
 		id: 3,
@@ -419,7 +429,12 @@ export const bachelorDegrees = [
 					"Fortalecimiento para el desarrollo profesional"
 				]
 			}
-		]
+		],
+		coordinatorName: "Lorna Jaqueline Padilla Chagollan",
+		coordinatorPosition: "Coordinadora de Ciencias de la Educación y Lengua Inglesa",
+		coordinatorEmail: "educacion@itecce.edu.mx",
+		coordinatorPhone: "314 133 2174",
+		coordinatorHref: "/directorio/coordinadora-de-ciencias-de-la-educacion-y-lengua-inglesa/lorna-padilla-chagollan"
 	},
 	{
 		id: 4,
@@ -563,7 +578,12 @@ export const bachelorDegrees = [
 					}
 				]
 			}
-		]
+		],
+		coordinatorName: "Alfonso Antonio Campos Reynoso",
+		coordinatorPosition: "Coordinador de Administración y Contabilidad",
+		coordinatorEmail: "coordinacionadmon@itecce.edu.mx",
+		coordinatorPhone: "314 100 1829",
+		coordinatorHref: "/directorio/coordinador-de-administracion-y-contabilidad/alfonso-campos-reynoso"
 	},
 	{
 		id: 5,
@@ -679,7 +699,12 @@ export const bachelorDegrees = [
 					"Seminario de investigación"
 				]
 			}
-		]
+		],
+		coordinatorName: "Gwendolyne Zamora García",
+		coordinatorPosition: "Coordinadora de Derecho",
+		coordinatorEmail: "derecho@itecce.edu.mx",
+		coordinatorPhone: "314 181 6254",
+		coordinatorHref: "/directorio/coordinadora-de-derecho/gwendolyne-zamora-garcia"
 	},
 	{
 		id: 6,
@@ -812,7 +837,12 @@ export const bachelorDegrees = [
 					"Actividades Culturales y Deportivas"
 				]
 			}
-		]
+		],
+		coordinatorName: "Ana Rosa Trejo Ramírez",
+		coordinatorPosition: "Coordinadora de Diseño Gráfico",
+		coordinatorEmail: "dgrafico@itecce.edu.mx",
+		coordinatorPhone: "464 123 4923",
+		coordinatorHref: "/directorio/coordinadora-de-diseno-grafico/ana-trejo-ramirez"
 	},
 	{
 		id: 7,
@@ -924,7 +954,12 @@ export const bachelorDegrees = [
 					"Seminario de tesis"
 				]
 			}
-		]
+		],
+		coordinatorName: "Lorna Jaqueline Padilla Chagollan",
+		coordinatorPosition: "Coordinadora de Ciencias de la Educación y Lengua Inglesa",
+		coordinatorEmail: "educacion@itecce.edu.mx",
+		coordinatorPhone: "314 133 2174",
+		coordinatorHref: "/directorio/coordinadora-de-ciencias-de-la-educacion-y-lengua-inglesa/lorna-padilla-chagollan"
 	},
 	{
 		id: 8,
@@ -1055,13 +1090,15 @@ export const bachelorDegrees = [
 					"Práctica en servicios de alimentación"
 				]
 			}
-		]
+		],
+		coordinatorName: "Karla Karina Arias Meza",
+		coordinatorPosition: "Coordinadora de Nutrición",
+		coordinatorEmail: "nutricion@itecce.edu.mx",
+		coordinatorPhone: "314 338 3761",
+		coordinatorHref: "/directorio/coordinadora-de-nutricion/karla-arias-meza"
 	},
-];
-
-export const engineeringDegrees = [
 	{
-		id: 1,
+		id: 9,
 		name: 'Licenciatura en Ingeniería Mecánica Automotriz',
 		slug: 'ingenieria-mecanica-automotriz',
 		image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
@@ -1180,6 +1217,11 @@ export const engineeringDegrees = [
 					"VW, TDI y Hyundai"
 				]
 			}
-		]
+		],
+		coordinatorName: "María Isabel Cruz Samperi",
+		coordinatorPosition: "Coordinadora de Ingeniería Mecánica Automotriz",
+		coordinatorEmail: "coordinacionlima@itecce.edu.mx",
+		coordinatorPhone: "314 162 0583",
+		coordinatorHref: "/directorio/coordinadora-de-ingenieria-mecanica-automotriz/maria-cruz-samperi"
 	},
 ];

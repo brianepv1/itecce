@@ -7,7 +7,6 @@ import { allCourses } from '../../components/carreras/Carreras.astro';
 import { GENERAL } from '../../constants/constants';
 
 export function getStaticPaths() {
-	console.log('Available courses:', allCourses);
 
   return allCourses.map(course => ({
     params: { slug: course.slug },

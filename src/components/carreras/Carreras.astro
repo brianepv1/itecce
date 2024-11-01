@@ -1,11 +1,10 @@
 ---
 import { bachelorDegrees } from '../../constants/carreras/bachelor';
-import { engineeringDegrees } from '../../constants/carreras/bachelor';
 import { highschool } from '../../constants/carreras/highschool';
 import { masterDegrees } from '../../constants/carreras/master';
 import EventCard from '../EventCard.astro';
 
-export const allCourses = [...bachelorDegrees, ...engineeringDegrees, ...highschool, ...masterDegrees];
+export const allCourses = [...bachelorDegrees, ...highschool, ...masterDegrees];
 
 ---
 
@@ -25,7 +24,7 @@ export const allCourses = [...bachelorDegrees, ...engineeringDegrees, ...highsch
 						data-w-id="c7e27eff-3c13-5966-5f3e-d5cedfdeedfc"
 						class="section-header-heading"
 					>
-						Conoce nuestros programas de preparatoria, universidad y maestrias
+						Conoce nuestros programas de bachillerato, Licenciaturas y posgrados
 					</h2>
 				</div>
 			</div>
@@ -58,7 +57,7 @@ export const allCourses = [...bachelorDegrees, ...engineeringDegrees, ...highsch
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-1"
 						aria-selected="false"
-						tabindex="-1"><div>Preparatoria</div></a
+						tabindex="-1"><div>Bachillerato</div></a
 					>
 					<a
 						data-w-tab="Licenciaturas"
@@ -71,24 +70,14 @@ export const allCourses = [...bachelorDegrees, ...engineeringDegrees, ...highsch
 						tabindex="-1"><div>Licenciaturas</div></a
 					>
 					<a
-						data-w-tab="Ingenierias"
+						data-w-tab="Maestrias"
 						class="tab-navigation-link w-inline-block w-tab-link"
 						id="w-tabs-0-data-w-tab-3"
 						href="#w-tabs-0-data-w-pane-3"
 						role="tab"
 						aria-controls="w-tabs-0-data-w-pane-3"
 						aria-selected="false"
-						tabindex="-1"><div>Ingenierias</div></a
-					>
-					<a
-						data-w-tab="Maestrias"
-						class="tab-navigation-link w-inline-block w-tab-link"
-						id="w-tabs-0-data-w-tab-4"
-						href="#w-tabs-0-data-w-pane-4"
-						role="tab"
-						aria-controls="w-tabs-0-data-w-pane-4"
-						aria-selected="false"
-						tabindex="-1"><div>Maestrias</div></a
+						tabindex="-1"><div>Posgrados</div></a
 					>
 				</div>
 				<div
@@ -159,32 +148,11 @@ export const allCourses = [...bachelorDegrees, ...engineeringDegrees, ...highsch
 						</div>
 					</div>
 					<div
-						data-w-tab="Ingenierias"
+						data-w-tab="Maestrias"
 						class="tab-pane w-tab-pane"
 						id="w-tabs-0-data-w-pane-3"
 						role="tabpanel"
 						aria-labelledby="w-tabs-0-data-w-tab-3"
-					>
-						<div class="course-content">
-							<div class="course-content-collection-wrapper w-dyn-list">
-								<div role="list" class="course-content-collection-list w-dyn-items">
-									{engineeringDegrees.map((course) => (
-										<EventCard
-											event={course}
-											class="background-tertiary"
-											data-w-id="1c3daf45-6c70-ebbc-b078-28eaef0d0eb6"
-										/>
-									))}
-								</div>
-							</div>
-						</div>
-					</div>
-					<div
-						data-w-tab="Maestrias"
-						class="tab-pane w-tab-pane"
-						id="w-tabs-0-data-w-pane-4"
-						role="tabpanel"
-						aria-labelledby="w-tabs-0-data-w-tab-4"
 					>
 						<div class="course-content">
 							<div class="course-content-collection-wrapper w-dyn-list">
