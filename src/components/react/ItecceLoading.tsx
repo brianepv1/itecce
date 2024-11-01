@@ -11,6 +11,7 @@ import { useScrollLock } from './hooks/useScrollLock'
 import { containerVariants, finalImageVariants } from './variants'
 
 export default function ItecceLoading() {
+  const [hydrated, setHydrated] = useState(false)
   const [showLogo, setShowLogo] = useState(true)
   const [isVisible, setIsVisible] = useState(true)
   const [showPermissionPopup, setShowPermissionPopup] = useState(false)
@@ -23,6 +24,10 @@ export default function ItecceLoading() {
 
   const { initializeAudio, startAudio, cleanup } = useAudioContext()
   const { mediaEngagement, updateEngagement, shouldAutoplay } = useMediaEngagement()
+
+  useEffect(() => {
+    setHydrated(true)
+  }, [])
 
   useEffect(() => {
     // Add the media capabilities check
@@ -124,6 +129,8 @@ export default function ItecceLoading() {
       handlePermissionResponse(true)
     }
   }
+
+  if (!hydrated) return null
 
   if (!isVisible) return null
 

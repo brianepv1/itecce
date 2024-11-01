@@ -12,31 +12,21 @@ import { GENERAL } from '../constants/constants';
 import ItecceLoading from '../components/react/ItecceLoading';
 ---
 
-<!-- Loading Component outside Layout
-<ItecceLoading client:only="react" />
--->
+<Layout title={GENERAL.title} description={GENERAL.description}>
+  <div id="loadingWrapper">
+    <ItecceLoading client:only="react" />
+  </div>
 
-<!-- Wrap everything else in a container  style="opacity: 0; transition: opacity 0.5s ease-in;"-->
-<div id="mainContent" >
-    <Layout title={GENERAL.title} description={GENERAL.description}>
-        <Landing />
-        <main class="main-wrapper">
-            <DegreePrograms />
-            <Events />
-            <Advantages />
-            <Testimonials />
-            <Faqs />
-            <Locations subHeading="Nuestras Ubicaciones" heading="Encuentra tu campus más cercano" />
-            <GlobalCTA />
-        </main>
-    </Layout>
-</div>
-
-<style>
-    /* Ensure loading component stays on top of everything
-    :global(.fixed) {
-        position: fixed !important;
-        z-index: 9999 !important;
-    }
-				 */
-</style>
+  <div id="mainContent" style="opacity: 0; transition: opacity 0.5s ease-in;">
+    <Landing />
+    <main class="main-wrapper">
+      <DegreePrograms />
+      <Events />
+      <Advantages />
+      <Testimonials />
+      <Faqs />
+      <Locations subHeading="Nuestras Ubicaciones" heading="Encuentra tu campus más cercano" />
+      <GlobalCTA />
+    </main>
+  </div>
+</Layout>
