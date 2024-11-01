@@ -8,10 +8,11 @@ export const pageLinks = [
 ];
 
 export const companyLinks = [
-  { text: 'Style Guide', href: '/utilities/style-guides' },
-  { text: 'Licenses', href: '/utilities/licenses' },
-  { text: 'Changelogs', href: '/utilities/licenses' },
-  { text: '404', href: '/404' },
+	{ href: "https://www.universidaditecce.mx/_files/ugd/66e106_97a64edc941443e48df504889138da31.pdf", text: "Escolar Media Superior", current: true },
+	{ href: "https://www.universidaditecce.mx/_files/ugd/66e106_38b5d50d99db4a20a5dfa0161bd8b5c9.pdf", text: "Escolar Educación Superior" },
+	{ href: "https://drive.google.com/file/d/1FSGtdhx9Yt3k_YdpfBgzEB4bB8FPkW6B/view", text: "Biblioteca" },
+	{ href: "https://drive.google.com/file/d/1XjabC-mU2S_03m9AALkGIIVbk6dZ71T2/view", text: "Centro de Cómputo" },
+	{ href: "https://drive.google.com/file/d/14aUW4xMn6x41ppUutAZk0Nyt1WuTPNmv/view", text: "Finanzas" },
 ];
 
 export const contactInfo = [

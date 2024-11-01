@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { GENERAL } from '../../constants/constants';
+import BlogHeader from '../../components/blog/BlogHeader.astro'
+import BlogBody from '../../components/blog/BlogBody.astro'
+
+// Add this getStaticPaths function
+export function getStaticPaths() {
+  return [
+    {
+      params: {
+        slug: 'como-mejorar-los-habitos-de-estudio'
+      },
+      props: {
+        title: 'Cómo mejorar los hábitos de estudio y alcanzar el éxito académico',
+        // Add any other props you want to pass to the page
+      }
+    }
+  ];
+}
+
+---
+
+<Layout title={GENERAL.title} description={GENERAL.description}>
+	<BlogHeader></BlogHeader>
+  <main>
+		<BlogBody></BlogBody>
+  </main>
+</Layout>

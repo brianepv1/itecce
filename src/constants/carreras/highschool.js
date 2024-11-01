@@ -8,6 +8,10 @@ export const highschool = [
     name: "Bachillerato General",
     slug: "bachillerato",
     image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+    altMedia: {
+      type: 'gif',
+      url: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXE2bWF6bGxwNnBtamdwcnBtd3VvNXVhYjB6eDlieTltcWxsNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKMt1VVNkHV2PaE/giphy-downsized.gif' // Education/learning animation
+    },
     category: "Bachillerato",
     studentCount: "Mas de 1000",
     duration: "8 semestres",
@@ -105,6 +109,10 @@ export const highschool = [
     name: "Bachillerato Técnico en Comercio Exterior",
     slug: "bachillerato-tecnico-comercio-exterior",
     image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+    altMedia: {
+      type: 'gif',
+      url: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWF6bGxwNnBtamdwcnBtd3VvNXVhYjB6eDlieTltcWxsNmxsNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlQXkh1wx1RjtUA/giphy-downsized.gif' // Global trade/shipping animation
+    },
     category: "Bachillerato",
     studentCount: "Mas de 500",
     duration: "8 semestres",
@@ -205,6 +213,10 @@ export const highschool = [
     name: "Bachillerato Técnico en Seguridad Pública",
     slug: "bachillerato-tecnico-seguridad-publica",
     image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+    altMedia: {
+      type: 'gif',
+      url: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm10d3VvNXVhYjB6eDlieTltcWxsNmxsNnJtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPrc2ngFZ6BTyww/giphy-downsized.gif' // Security/protection animation
+    },
     category: "Bachillerato",
     studentCount: "Mas de 300",
     duration: "8 semestres",

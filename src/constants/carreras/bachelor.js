@@ -4,6 +4,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Administración',
 		slug: 'licenciatura-administracion',
 		image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/video/2016/02/29/2340-157269921_large.mp4',
+			poster: 'https://i.vimeocdn.com/video/773707937-4a831e5f833843e8c39f23de8b19d13530d575cb669e8d2a2339ba8c6e185c32-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 250',
 		duration: '8 semestres',
@@ -188,6 +193,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Aduanas y Comercio Exterior',
 		slug: 'licenciatura-aduanas-y-comercio-exterior',
 		image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/414812014/container-38537.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/887862354-d0d65c82e37547cd4be423c7e986d907809e4f0d8fe4d1ce7ad4e22493d195c5-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 600',
 		duration: '8 semestres',
@@ -324,6 +334,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Ciencias de la Educación',
 		slug: 'licenciatura-ciencias-de-la-educacion',
 		image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/529660557/education-71801.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/1096323510-98c95d5a8e26d1a4c4019d3b4e27baa6f926227f6be13d11c4f5ce5909b76399-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 200',
 		duration: '8 semestres',
@@ -441,6 +456,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Contabilidad',
 		slug: 'licenciatura-contabilidad',
 		image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/447605936/finance-48534.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/934322744-4e52e151e5c3321f5c8155a6b84c901f2a2b06fa8df1f97d5a1e28bb1af137d2-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 350',
 		duration: '8 semestres',
@@ -590,6 +610,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Derecho',
 		slug: 'licenciatura-derecho',
 		image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/470860846/justice-54390.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/979421891-79b95d3c8f51ff5db951cb8abc7d31f92c96767fb97c9fb1fb60b93056b192e1-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 400',
 		duration: '8 semestres',
@@ -711,6 +736,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Diseño Gráfico',
 		slug: 'licenciatura-diseno-grafico',
 		image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/420033086/design-40162.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/895543882-82e58e6f33c73c7f95e26d531b4fce88f9a45d9038c7727d3b33e1f5cd4397c2-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 150',
 		duration: '8 semestres',
@@ -849,6 +879,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Lengua Inglesa',
 		slug: 'licenciatura-lengua-inglesa',
 		image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/413831083/language-38394.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/886431387-4ce46a9837db890ed27f3b0c7977987f6c6f035b7513165a8e9a3470a9ae68ab-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 100',
 		duration: '8 semestres',
@@ -966,6 +1001,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Nutrición',
 		slug: 'licenciatura-nutricion',
 		image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/475815800/healthy-food-55273.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/989175320-5f95b065d872f9fe7ca062b5769e5f105d61d4f42b4f284b4f8f63776dce4c3f-d_480x360'
+		},
 		category: 'Licenciatura',
 		studentCount: 'Mas de 200',
 		duration: '8 semestres',
@@ -1102,6 +1142,11 @@ export const bachelorDegrees = [
 		name: 'Licenciatura en Ingeniería Mecánica Automotriz',
 		slug: 'ingenieria-mecanica-automotriz',
 		image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+		altMedia: {
+			type: 'video',
+			url: 'https://cdn.pixabay.com/vimeo/451829559/automotive-49273.webm?width=480',
+			poster: 'https://i.vimeocdn.com/video/942679774-608168f8ff44e2b8a2f672726b30b4b5c89465801d4e49cce2f83c7d690d33db-d_480x360'
+		},
 		category: 'Ingeniería',
 		studentCount: 'Mas de 300',
 		duration: '8 semestres',

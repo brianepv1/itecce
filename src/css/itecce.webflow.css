@@ -8120,3 +8120,88 @@ figure {
   font-style: normal;
   font-display: block;
 }
+
+.v0-navbar-utilities {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+
+.v0-navbar-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.v0-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  border-radius: 99px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.v0-button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.v0-whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.v0-button-text {
+  transition: transform 0.3s ease;
+}
+
+.v0-button-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.v0-button-primary:hover {
+  color: var(--color-white);
+  border-color: var(--color-secondary);
+}
+
+.v0-button-primary:hover::before {
+  transform: translateX(0);
+}
+
+.v0-button-primary:hover .v0-whatsapp-icon {
+  transform: rotate(360deg);
+}
+
+.v0-button-primary:hover .v0-button-text {
+  transform: translateX(5px);
+}
+
+.v0-w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}

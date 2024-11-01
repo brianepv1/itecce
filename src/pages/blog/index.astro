@@ -1,12 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { GENERAL } from '../../constants/constants';
-import Directory from '../../components/directorio/Directory';
+import Landing from '../../components/blog/Landing.astro';
+import BlogList from '../../components/blog/BlogList.astro';
 
 ---
 
 <Layout title={GENERAL.title} description={GENERAL.description}>
+	<Landing></Landing>
   <main>
-		<Directory client:load></Directory>
+		<BlogList></BlogList>
   </main>
 </Layout>

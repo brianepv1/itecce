@@ -24,7 +24,7 @@ export const directory = [
   {
     department: "Rectoría y Dirección General",
     name: "Jessica Patricia Barajas Contreras",
-    title: "",
+    title: "Licenciada",
     position: "Asistente de Dirección General",
     extension: "118",
     email: "asistentedireccion@itecce.edu.mx",

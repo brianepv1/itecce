@@ -17,9 +17,9 @@ const { person } = Astro.props;
 const defaultImage = "https://cdn.prod.website-files.com/66fb75f1a77f88302082f53d/66fb75f1a77f88302082f66e_our-expert-8.webp";
 ---
 
-<header class="section-expert-details-hero background-gradient my-6">
+<header class="section-expert-details-hero background-gradient">
   <div class="container">
-    <div class="inner-wrapper expert-details-hero">
+    <div class="inner-wrapper expert-details-hero mt-6">
       <div class="expert-details-hero-content">
         <div data-w-id="179d6f24-326e-99fe-081b-51a6dd877ebb" class="breadcrumbs">
           <a href="/" class="breadcrumbs-link root">Inicio</a>
@@ -33,17 +33,17 @@ const defaultImage = "https://cdn.prod.website-files.com/66fb75f1a77f88302082f53
 
         <div class="margin-bottom margin-16px">
           <h1 data-w-id="3bfffb4e-0d02-91ac-0538-c8a42ecb3984">
-            {person.name}
+						{person.title && `${person.title}`} {person.name}
           </h1>
         </div>
 
         <div class="margin-bottom margin-24px">
-          <p data-w-id="8c525535-dbb5-2bf7-cfd9-304ed7a5c149" class="body-text-default">
-            {person.title && `${person.title} • `}{person.position}
-          </p>
+					<h5 class="body-text-default">
+            {person.position}
+          </h5>
         </div>
 
-        <div data-w-id="d76f5ddd-5752-3f02-4570-12c664b42a1c" class="rich-text-experts w-richtext">
+        <div class="rich-text-experts w-richtext">
           <h2>Información</h2>
           <p>
             {person.department}<br/>

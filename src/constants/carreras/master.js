@@ -4,6 +4,10 @@ export const masterDegrees = [
     name: "Maestría en Fiscal",
     slug: "maestria-fiscal",
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+    altMedia: {
+      type: 'gif',
+      url: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXVhYjB6eDlieTltcWxsNmxsNnJtdDV1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JtBZm3Getg3dqxK0zP/giphy-downsized.gif' // Finance/tax animation
+    },
     category: "Maestría",
     studentCount: "Mas de 100",
     duration: "4 semestres",
@@ -73,6 +77,10 @@ export const masterDegrees = [
     name: "Maestría en Derecho Familiar",
     slug: "maestria-derecho-familiar",
     image: 'https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+    altMedia: {
+      type: 'gif',
+      url: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDlieTltcWxsNmxsNnJtdDV1YXg5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPwv9exP7FhNxzW/giphy-downsized.gif' // Family/law animation
+    },
     category: "Maestría",
     studentCount: "Mas de 80",
     duration: "4 semestres",
@@ -154,6 +162,10 @@ export const masterDegrees = [
     name: "Maestría en Investigación Educativa",
     slug: "maestria-investigacion-educativa",
     image: 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=334&q=80',
+    altMedia: {
+      type: 'gif',
+      url: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWxsNnJtdDV1YXg5Ynk5bXFsbDZsbDZybXQmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKMt1VVNkHV2PaE/giphy-downsized.gif' // Research/education animation
+    },
     category: "Maestría",
     studentCount: "Mas de 70",
     duration: "4 semestres",

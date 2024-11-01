@@ -15,6 +15,8 @@ export default {
     { href: "/", text: "Inicio" },
     { href: "/acerca-de", text: "Nosotros" },
     { href: "/carreras", text: "Carreras" },
+		{ href: '/directorio', text: 'Directorio' },
+		{ href: '/blog', text: 'Blog' }
   ],
   pagesDropdown: {
     label: "Reglamentos",
